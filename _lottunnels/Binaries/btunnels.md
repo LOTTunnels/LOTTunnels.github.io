@@ -7,10 +7,9 @@ Commands:
   - Command: btunnel.exe file --key <API-KEY>
     Description: This will generate tunnels link while exposing the local filesystem as a Directory Listing.
     Usecase: Exposing file system over the internet.
-    Category: Exfiltration
+    Category: exfiltrate
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
-Commands:
   - Command: btunnel.exe http --key <API-KEY>
     Description: This will generate tunnels link binding it to the local service running on the provided port. Can be used to expose local services, web applications and local files etc. 
     Usecase: Exposing local services, ports, web applications etc. over the internet.
