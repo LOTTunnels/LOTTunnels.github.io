@@ -16,6 +16,12 @@ Commands:
     Category: Phishing
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
+  - Command: cloudflared.exe tunnel --url <IP>:<PORT>
+    Description: By simply hosting malicious binaries/payloads, it is possible to expose them via CloudFlare domains. 
+    Usecase: Hosting malicious binaies/payloads locally and exposing them via CloudFlare URLs.
+    Category: Download
+    Privileges: User
+    OperatingSystem: Windows, Mac, Linux
 Full_Path:
   - Path: Downloaded version of cloudflared, which gets executed anywhere on the system.
 Detection:
