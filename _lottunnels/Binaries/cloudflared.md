@@ -10,6 +10,12 @@ Commands:
     Category: exfiltrate
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
+  - Command: cloudflared.exe tunnel --url <IP>:<PORT>
+    Description: By hosting a local server running a Phishing Website it is possible to expose it via CloudFlare URLs/Domains.
+    Usecase: Hosting phishing sites locally and exposing them via CloudFlare URLs.
+    Category: Phishing
+    Privileges: User
+    OperatingSystem: Windows, Mac, Linux
 Full_Path:
   - Path: Downloaded version of cloudflared, which gets executed anywhere on the system.
 Detection:
