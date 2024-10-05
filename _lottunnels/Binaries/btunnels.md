@@ -16,6 +16,18 @@ Commands:
     Category: Access
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
+  - Command: btunnel.exe http --key <API-KEY>
+    Description: By simply hosting a phishing website locally, it is possible to expose it via BTunnels Domain.
+    Usecase: Hosting phishing sites locally and exposing them via BTunnels URLs.
+    Category: Phishing
+    Privileges: User
+    OperatingSystem: Windows, Mac, Linux
+  - Command: btunnel.exe http --key <API-KEY>
+    Description: By simply hosting a malicious binaries/payloads locally it is possible to expose them via BTunnels domains.
+    Usecase: Hosting malicious binaies/payloads locally and exposing them via BTunnels URLs.
+    Category: Download
+    Privileges: User
+    OperatingSystem: Windows, Mac, Linux
 Full_Path:
   - Path: Downloaded version of Btunnels, which gets executed anywhere on the system.
 Detection:
