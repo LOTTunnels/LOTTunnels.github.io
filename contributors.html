@@ -1,0 +1,25 @@
+---
+layout: page
+title: Contributors
+---
+<script>
+    async function findGitHubContributors() {
+        const PATTERN = /<([^>]+)>; rel="next"/
+        let next_page = 'https://api.github.com/repos/LOLTunnels/loltunnels.github.io/contributors?anon=false';
+        while(next_page){
+            let githubApi = await fetch(next_page)
+            next_page = (PATTERN.exec(githubApi.headers.get("link")) || [null, null])[1];
+
+            let contributors = await (githubApi).json();
+            contributors.forEach(function (contributor) {
+                var div = document.createElement('div');
+                div.innerHTML = '<a href="https://github.com/' + contributor['login'] + '"><img src="https://avatars.githubusercontent.com/u/' + contributor['id'] + '?s=16&v=4" alt="Avatar of ' + contributor['login'] + '" class="external-favicon"></a> <a href="https://github.com/LOLTunnels/loltunnels.github.io/commits?author=' + contributor['login'] + '">' + contributor['login'] + '</a>';
+                document.getElementById("contributors").appendChild(div);
+            });
+        }
+    }
+    findGitHubContributors();
+</script>
+
+<p>We thank everyone who has contributed to this project via our <a href="https://github.com/LOLTunnels/loltunnels.github.io">GitHub repository</a>:</p>
+<div id="contributors"></div>

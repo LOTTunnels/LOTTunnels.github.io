@@ -1,0 +1,30 @@
+---
+execute:
+  label: Execute
+  description: |
+    The LOTTS can achieve arbitrary code execution.
+
+access:
+  label: Access
+  description: |
+    The LOTTS can provide access to files.
+
+download:
+  label: Download
+  description: |
+    The LOTTS can download files.
+
+upload:
+  label: Upload
+  description: |
+    The LOTTS can upload files.
+
+exfiltrate:
+  label: Exfiltration
+  description: |
+    The LOTTS can exfiltrate files.
+
+shell-access:
+  label: Shell Access
+  description: |
+    The LOTTS can provide Shell-Access.

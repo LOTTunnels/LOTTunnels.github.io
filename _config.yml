@@ -1,0 +1,16 @@
+---
+title: LOTTunnels
+
+exclude: ['/Gemfile', '/Makefile', '/README.md', '/NOTICE.md', 'LICENSE']
+
+permalink: pretty
+
+collections:
+  lottunnels:
+    output: true
+
+defaults:
+  - scope:
+      path: '_lottunnels'
+    values:
+      layout: 'bin'

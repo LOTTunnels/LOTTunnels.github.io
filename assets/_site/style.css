@@ -1,0 +1,119 @@
+@media (min-width: 1000px) {
+  body {
+    width: 800px;
+    margin: 40px auto; }
+
+  p {
+    text-align: justify; } }
+@media not all and (min-width: 1000px) {
+  .github-corner {
+    display: none; } }
+body {
+  font-family: sans, sans-serif; }
+
+code {
+  padding: 0.15em 0.25em;
+  border-radius: 0.25em;
+  color: #bf0707;
+  background: #fff4f4; }
+
+pre {
+  background: #fff4f4;
+  padding: 1em;
+  overflow-x: auto; }
+  pre code {
+    padding: 0;
+    border-radius: 0; }
+
+a:link, a:visited {
+  color: #bf0707; }
+
+a:hover {
+  color: #ff0000; }
+
+h2 .permalink, h3 .permalink, h4 .permalink, h5 .permalink, h5 .permalink {
+  margin-left: 5px;
+  text-decoration: none;
+  visibility: hidden; }
+  h2 .permalink::before, h3 .permalink::before, h4 .permalink::before, h5 .permalink::before, h5 .permalink::before {
+    content: "#"; }
+h2:target, h3:target, h4:target, h5:target, h5:target {
+  border-left: 5px solid #bf0707;
+  padding-left: 5px; }
+h2:hover .permalink, h3:hover .permalink, h4:hover .permalink, h5:hover .permalink, h5:hover .permalink {
+  visibility: visible; }
+
+#bin-search {
+  margin-top: 50px;
+  padding: 0.5em;
+  width: 100%;
+  box-sizing: border-box; }
+
+#bin-table {
+  width: 100%; }
+  #bin-table th, #bin-table td {
+    padding: 0.2em 1em; }
+  #bin-table th {
+    text-align: left; }
+  #bin-table tbody tr:hover {
+    background: #fff4f4; }
+  #bin-table #search-message {
+    display: none;
+    text-align: center;
+    padding: 1em; }
+
+.function-list {
+  font-size: 0.8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .function-list li {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    margin: 0.2em 0;
+    border: 1px solid #bf0707; }
+    .function-list li a:link, .function-list li a:visited {
+      color: #bf0707;
+      text-decoration: none; }
+    .function-list li:hover, .function-list li a:hover {
+      color: #ff0000;
+      border-color: #ff0000; }
+
+.examples {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  counter-reset: item;
+  margin: 0;
+  padding: 0; }
+  .examples li {
+    display: table-row; }
+    .examples li:not(:only-child):before {
+      display: table-cell;
+      font-size: 0.8rem;
+      font-weight: bold;
+      width: 3em;
+      text-align: center;
+      counter-increment: item;
+      content: "(" counter(item,lower-alpha) ")"; }
+
+.logo {
+  float: right;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-bottom: 20px; }
+
+.bin-name {
+  font-family: monospace;
+  font-size: 1.2rem; }
+
+.function-name {
+  font-size: 1.4rem;
+  font-weight: bold; }
+
+.github-buttons {
+  display: inline-block;
+  margin-left: 10px; }
+  .github-buttons a.github-button {
+    visibility: hidden; }
