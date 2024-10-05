@@ -28,3 +28,8 @@ shell-access:
   label: Shell Access
   description: |
     The LOTTS can provide Shell-Access.
+
+phishing:
+  label: Phishing
+  description: |
+    The LOTTS can be used for Phishing Campaigns.
