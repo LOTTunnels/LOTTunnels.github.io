@@ -10,18 +10,21 @@ Commands:
     Category: exfiltrate
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
+    
   - Command: btunnel.exe http --key <API-KEY>
     Description: This will generate tunnels link binding it to the local service running on the provided port. Can be used to expose local services, web applications and local files etc. 
     Usecase: Exposing local services, ports, web applications etc. over the internet.
     Category: Access
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
+
   - Command: btunnel.exe http --key <API-KEY>
     Description: By simply hosting a phishing website locally, it is possible to expose it via BTunnels Domain.
     Usecase: Hosting phishing sites locally and exposing them via BTunnels URLs.
     Category: Phishing
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
+
   - Command: btunnel.exe http --key <API-KEY>
     Description: By simply hosting a malicious binaries/payloads locally it is possible to expose them via BTunnels domains.
     Usecase: Hosting malicious binaies/payloads locally and exposing them via BTunnels URLs.

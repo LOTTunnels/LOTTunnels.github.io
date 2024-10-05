@@ -18,6 +18,13 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
+  - Command: CTRL + SHIFT + P, Searching for Foreward a port, Click on forward the port and provide a local port on which a local server is running. An example, 'python -m http.server 8080'.  
+    Description: Threat actors can host malicious binaries/payloads locally and can use Microsoft Tunnels domains to download them onto the victim machine. 
+    Usecase: Downloading malicious binaries/payloads on victim system by hosting them locally. 
+    Category: Download
+    Privileges: User
+    OperatingSystem: Windows, Mac, Linux
+
 Full_Path:
   - Path: Downloaded version of Visual Studio Code, which gets executed anywhere on the system.
 Detection:
