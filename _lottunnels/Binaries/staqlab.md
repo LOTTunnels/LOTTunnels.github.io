@@ -13,13 +13,13 @@ Commands:
   - Command: staqlab-tunnel.exe port=<PORT>
     Description: This will create a tunnel to the port defined.
     Usecase: Exposing the local server running on local port over dynamic Staqlab Tunnels.
-    Category: Exfiltration
+    Category: exfiltrate
     Privileges: User
     OperatingSystem: Windows, Mac, Linux, Raspberry Pi
   - Command: staqlab-tunnel.exe port=<PORT> domain=<DOMAIN>
     Description: Exposing the local server running on local port over Staqlab Tunnels having static domain names defined in the dashboard.
     Usecase: Exposing the local server running on local port over static Staqlab Tunnels.
-    Category: Exfiltration
+    Category: exfiltrate
     Privileges: User
     OperatingSystem: Windows, Mac, Linux, Raspberry Pi
 Full_Path:
