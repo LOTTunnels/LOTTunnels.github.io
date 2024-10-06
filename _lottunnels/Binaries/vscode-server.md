@@ -30,6 +30,7 @@ Full_Path:
   - Path: Visual Studio Code added into the PATH variable.
 Detection:
   - Domain: 'https://vscode.dev/tunnel/*'
+  - Domain: 'https://*.tunnels.api.visualstudio.com/'
   - Sigma: https://github.com/SigmaHQ/sigma/blob/master/rules/windows/network_connection/net_connection_win_domain_devtunnels.yml
 Resources:
   - Link: https://cydefops.com/vscode-data-exfiltration
