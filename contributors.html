@@ -5,7 +5,7 @@ title: Contributors
 <script>
     async function findGitHubContributors() {
         const PATTERN = /<([^>]+)>; rel="next"/
-        let next_page = 'https://api.github.com/repos/LOLTunnels/loltunnels.github.io/contributors?anon=false';
+        let next_page = 'https://api.github.com/repos/LOTTunnels/LOTTunnels.github.io/contributors?anon=false';
         while(next_page){
             let githubApi = await fetch(next_page)
             next_page = (PATTERN.exec(githubApi.headers.get("link")) || [null, null])[1];
@@ -21,5 +21,5 @@ title: Contributors
     findGitHubContributors();
 </script>
 
-<p>We thank everyone who has contributed to this project via our <a href="https://github.com/LOLTunnels/loltunnels.github.io">GitHub repository</a>:</p>
+<p>We thank everyone who has contributed to this project via our <a href="https://github.com/LOTTunnels/LOTTunnels.github.io">GitHub repository</a>:</p>
 <div id="contributors"></div>
