@@ -15,7 +15,7 @@ title: LOTTunnels
 <a href="https://github.com/LOTTunnels/LOTTunnels.github.io/blob/master/README.md"><img src="{{ '/assets/logo.png' | relative_url }}" height="150" alt="{{site.title}} Logo" style="margin-right: 10px;"></a>
 <div>
 <h2 style="margin-top: 0">Living Off The Tunnels</h2>
-Living Off The Tunnels a.k.a LOTTS Project is community driven project started by <a href="https://linkedin.com/in/KamranSaifullah">Kamran Saifullah</a> to document digital tunnels that can be abused by threat actors as well by insiders for data exfiltrations, persistence, shell access etc. 
+Living Off The Tunnels a.k.a LOTTunnels Project is community driven project started by <a href="https://linkedin.com/in/KamranSaifullah">Kamran Saifullah</a> to document digital tunnels that can be abused by threat actors as well by insiders for data exfiltrations, persistence, shell access etc. 
 <br><br>Special thanks to all the <a href="https://lottunnels.github.io/contributors/">contributors</a> as this would not be possible without community support.
 <br><br>
 The inspiration of this project and site template is taken directly from <a href="https://lolbas-project.github.io/">LOLBAS</a> project.
