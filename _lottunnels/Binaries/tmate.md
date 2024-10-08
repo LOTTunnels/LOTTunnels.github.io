@@ -7,7 +7,7 @@ Commands:
   - Command: tmate
     Description: This will generate instant tmate tunnel which is accessible via web browser as well as via SSH client. Insider threat or external threat actor can used this for backdoor, persistence, data exfiltration. 
     Usecase: Exposing file system over the internet.
-    Category: Exfiltration
+    Category: Exfiltrate
     Privileges: User
     OperatingSystem: Mac, Linux
 Full_Path:
