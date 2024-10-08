@@ -15,7 +15,7 @@ title: LOTTunnels
 <a href="https://github.com/LOTTunnels/LOTTunnels.github.io/blob/master/README.md"><img src="{{ '/assets/logo.png' | relative_url }}" height="150" alt="{{site.title}} Logo" style="margin-right: 10px;"></a>
 <div>
 <h2 style="margin-top: 0">Living Off The Tunnels</h2>
-LOTTunnels project is a list of softwares, binaries, executables which can be used by insiders as well as threat actors for data exfiltration, delivering payloads, forwarding ports and hosting phishing websites etc.
+Living Off The Tunnels a.k.a LOTTS Project is community driven project started by <a href="https://linkedin.com/in/KamranSaifullah">Kamran Saifullah</a> to document digital tunnels which can be abused by threat actors as well by insiders for data exfiltrations, persistence, shell access etc.
 <br><br>
 The inspiration of this project and site template is taken directly from <a href="https://lolbas-project.github.io/">LOLBAS</a> project. Kudos to the team for bringing in amazing projects. 
 <br>
