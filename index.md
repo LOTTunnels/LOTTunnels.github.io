@@ -1,6 +1,6 @@
 ---
 layout: page
-title: LOTTS
+title: LOTTunnels
 ---
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133649096-1"></script>
@@ -15,7 +15,7 @@ title: LOTTS
 <a href="https://github.com/LOTTunnels/LOTTunnels.github.io/blob/master/README.md"><img src="{{ '/assets/logo.png' | relative_url }}" height="150" alt="{{site.title}} Logo" style="margin-right: 10px;"></a>
 <div>
 <h2 style="margin-top: 0">Living Off The Tunnels</h2>
-LOTTs project is a list of softwares, binaries, executables which can be used by insiders as well as threat actors for data exfiltration, delivering payloads, forwarding ports and hosting phishing websites etc.
+LOTTunnels project is a list of softwares, binaries, executables which can be used by insiders as well as threat actors for data exfiltration, delivering payloads, forwarding ports and hosting phishing websites etc.
 <br><br>
 The inspiration of this project and site template is taken directly from <a href="https://lolbas-project.github.io/">LOLBAS</a> project. Kudos to the team for bringing in amazing projects. 
 <br>
