@@ -55,10 +55,25 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
+  - Command: expose share http://https://localhost:<LOCAL PORT> --server=<server>
+    Description: This can be used by threat actors to connect to the nearest expose server.
+    Usecase: Connecting to the nearest expose server in specific regions.
+    Category: access
+    Privileges: User
+    OperatingSystem: Windows, Mac, Linux
+
 Full_Path:
   - Path: Installed version of expose binary/docker container, which gets executed anywhere on the system.
 Detection:
   - Domain: '*.sharedwithexpose.com'
+  - Domain: '*.eu-1.sharedwithexpose.com'
+  - Domain: '*.us-1.sharedwithexpose.com'
+  - Domain: '*.us-2.sharedwithexpose.com'
+  - Domain: '*.ap-1.sharedwithexpose.com'
+  - Domain: '*.in-1.sharedwithexpose.com'
+  - Domain: '*.sa-1.sharedwithexpose.com'
+  - Domain: '*.au-1.sharedwithexpose.com'
+  - Domain: '*.eu-2.sharedwithexpose.com'
   - Command: Execution of the binary and/or with arguments.
 Resources:
   - Link: https://expose.dev/docs/getting-started/installation
