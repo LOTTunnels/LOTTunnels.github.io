@@ -32,6 +32,7 @@ Detection:
   - Domain: '*.tunnel.staqlab.com'
   - Domain: 'https://tunnel.staqlab.com/inspector/<4 Digits>/inspector'
   - Domain: '*.staqlab-tunnel.com'
+  - Command: Execution of the binary and/or with arguments. 
 Acknowledgement:
   - Person: Kamran Saifullah
     Handle: '@deFr0ggy'

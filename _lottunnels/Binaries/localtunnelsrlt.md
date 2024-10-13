@@ -32,6 +32,7 @@ Detection:
   - Domain: '*.loca.lt'
   - Domain: '*.localtunnel.me'
   - Domain: Custom Domains
+  - Commands: Exeution of the binary and/or with arguments.
 Resources:
   - Link: https://github.com/kaichaosun/rlt
 Acknowledgement:

@@ -31,6 +31,7 @@ Full_Path:
 Detection:
   - Domain: '*.tmate.io'
   - Domain: 'https://tmate.io/t/*'
+  - Command: Execution of the binary and/or with arguments.
 Resources:
   - Link: https://dfir.ch/posts/tmate_as_a_backdoor/
 Acknowledgement:

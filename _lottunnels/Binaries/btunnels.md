@@ -37,6 +37,7 @@ Detection:
   - Domain: '*.btunnel.co.in'
   - Domain: '*.btunnel.in'
   - Sigma: https://github.com/search?q=repo%3ASigmaHQ%2Fsigma+9e02c8ec-02b9-43e8-81eb-34a475ba7965&type=code
+  - Command: Execution of the binary and/or with arguments.
 Resources:
   - Link: https://valhalla.nextron-systems.com/info/sigma-rule/9501f8e6-8e3d-48fc-a8a6-1089dd5d7ef4
   - Link: https://defr0ggy.github.io/research/Utilizing-BTunnel-For-Data-Exfiltration/

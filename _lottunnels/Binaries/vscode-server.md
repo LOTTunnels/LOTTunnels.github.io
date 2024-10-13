@@ -32,6 +32,7 @@ Detection:
   - Domain: 'https://vscode.dev/tunnel/*'
   - Domain: 'https://*.tunnels.api.visualstudio.com/'
   - Sigma: https://github.com/SigmaHQ/sigma/blob/master/rules/windows/network_connection/net_connection_win_domain_devtunnels.yml
+  - Command: Execution of the binary with arguments.
 Resources:
   - Link: https://cydefops.com/vscode-data-exfiltration
 Acknowledgement:

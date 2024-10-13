@@ -28,6 +28,7 @@ Full_Path:
   - Path: Downloaded version of cloudflared, which gets executed anywhere on the system.
 Detection:
   - Domain: '*.trycloudflare.com'
+  - Command: Execution of the binary and/or with arguments.
 Resources:
   - Link: https://defr0ggy.github.io/research/Abusing-Cloudflared-A-Proxy-Service-To-Host-&-Share-Apps/
 Acknowledgement:

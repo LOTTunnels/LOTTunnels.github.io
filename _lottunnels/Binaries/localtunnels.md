@@ -52,6 +52,7 @@ Full_Path:
 Detection:
   - Domain: '*.loca.lt'
   - Domain: '*.localtunnel.me'
+  - Command: Execution of the binary and/or with arguments.
 Resources:
   - Link: https://github.com/localtunnel/server
   - Link: https://github.com/localtunnel/localtunnel?tab=readme-ov-file
