@@ -1,6 +1,6 @@
 ---
 Name: Expose
-Description: Expose is an open source as well as license based tool which enabled local services/applications to be exposed over the internet. Insiders as well as threat actors can use this tool to perform variety of malicious tasks. Although, the tool requires an authentication token which of which free tier can be obtained. 
+Description: Expose is an open source as well as subscription based tool which enables local services/applications to be exposed over the internet. Insiders as well as threat actors can use this tool to perform variety of malicious tasks. Although, the tool requires an authentication token of which free token can be obtained from the website.
 
 Author: Kamran Saifullah
 Created: 2024-10-13
