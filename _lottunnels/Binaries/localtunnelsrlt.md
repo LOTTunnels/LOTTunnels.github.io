@@ -5,6 +5,13 @@ Author: Kamran Saifullah
 Created: 2024-10-13
 Commands:
 
+  - Command: localtunnel server --domain init.so --port <local port> --proxy-port <proxy port> --secure
+    Description: Running rlt on the server for malicious purposes.
+    Usecase: Hosting and exposing the server which will then be connected by the client.
+    Category: access
+    Privileges: User
+    OperatingSystem: Windows, Mac, Linux
+
   - Command: cargo install localtunnel
     Description: This is a quick way to install localtunnel rust binary on the local machine.
     Usecase: Installation of rlt.
@@ -15,13 +22,6 @@ Commands:
   - Command: localtunnel client --host <host name> --subdomain <subdomain> --port <local port>
     Description: This is a quick way to connect to the hosted server running localtunnel rlt service binded to the port.
     Usecase: Connecting to malicious server hosting localtunnel rlt service.
-    Category: access
-    Privileges: User
-    OperatingSystem: Windows, Mac, Linux
-
-  - Command: localtunnel server --domain init.so --port <local port> --proxy-port <proxy port> --secure
-    Description: Running rlt on the server for malicious purposes.
-    Usecase: Hosting and exposing the server which will then be connected by the client.
     Category: access
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
