@@ -9,6 +9,11 @@ access:
   description: |
     The LOTTS can provide access to files.
 
+install:
+  label: Install
+  description: |
+    The LOTTS can be installed.
+
 download:
   label: Download
   description: |
