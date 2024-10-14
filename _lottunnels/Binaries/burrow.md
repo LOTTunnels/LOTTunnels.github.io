@@ -12,12 +12,12 @@ Commands:
     OperatingSystem: Mac, Linux
 
 Full_Path:
-  - Path: Installed version/In memory execution of telebit.
+  - Path: Execution of bash with burrow tunnels. 
 Detection:
   - Domain: '*.burrow.io'
   - Domain: '*.burrow.link'
   - Domain: 'io.burrow.link:*'
-  - Command: Execution of the binary and/or with arguments.
+  - Command: Execution of bash with burrow tunnels.
 Resources:
   - Link: https://burrow.io/
 Acknowledgement:
