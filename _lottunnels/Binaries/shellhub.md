@@ -15,7 +15,7 @@ Commands:
 
   - Command: ShellHub Dashboard
     Description: Accessing the local system via ShellHub dashboard. Requires to know the username and password or SSH private keys.
-    Usecase: Registering local machine with the loophole account. 
+    Usecase: Knowing the credentials or SSH private key, users/threat actors can connect to the local terminal via ShellHub Cloud Terminal.
     Category: shell-access
     Privileges: User
     OperatingSystem: Mac, Linux
