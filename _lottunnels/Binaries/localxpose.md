@@ -47,10 +47,10 @@ Commands:
     OperatingSystem: Windows, Mac, Linux
 
 Full_Path:
-  - Path: Execution of bash with burrow tunnels. 
+  - Path: Downloaded version of LocalExpose, which gets executed anywhere on the system.
 Detection:
   - Domain: '*.localxpose.io'
-  - Command: Execution of installed/downloaded binary and/or with arguments from anywhere on the system.
+  - Command: Execution of installed/downloaded binary.
 Resources:
   - Link: https://localxpose.io/
 Acknowledgement:
