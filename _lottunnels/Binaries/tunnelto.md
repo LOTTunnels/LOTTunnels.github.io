@@ -44,6 +44,7 @@ Full_Path:
 Detection:
   - Domain: '*.tuns.sh'
   - Domain: '*.ssi.sh'
+  - Domain: '*.tunnelto.dev'
   - Command: Execution of installed/downloaded binary.
 Resources:
   - Link: https://docs.ssi.sh/
