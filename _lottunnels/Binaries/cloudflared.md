@@ -1,5 +1,5 @@
 ---
-Name: Cloudflare ArgoTunnels/Cloudflared - cloudflared.exe
+Name: Cloudflared
 Description: Cloudflared is provided by CloudFlare which is a cyber security company. This tool works in a similar fashion to others and allows insiders as well as threat actors for data exfiltration.
 Author: Kamran Saifullah
 Created: 2024-10-05

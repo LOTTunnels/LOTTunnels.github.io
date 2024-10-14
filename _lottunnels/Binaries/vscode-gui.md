@@ -1,5 +1,5 @@
 ---
-Name: Visual Studio Code - GUI
+Name: VSCode GUI
 Description: Insiders as well as threat actors having GUI access to system can leverage this technique to create Visual Studio Tunnel links to exfiltrate the data.
 Author: Kamran Saifullah
 Created: 2024-10-05

@@ -1,5 +1,5 @@
 ---
-Name: LocalTunnels - rlt
+Name: Rust LocalTunnels
 Description: LocalTunnels a.k.a Rust Tunnels is an extension of LocalTunnels implemented in Rust Language. Similar to LocalTunnels, this can also be used by insiders as well as threat actors to exfiltrate data, download malciious binaries, malwares etc. Also, the rlt can be hosted on a custom server, thus the binary itself is required to be monitored as well as having network monitoring. 
 Author: Kamran Saifullah
 Created: 2024-10-13

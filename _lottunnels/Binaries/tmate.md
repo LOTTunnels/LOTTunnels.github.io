@@ -1,5 +1,5 @@
 ---
-Name: Instant Terminal Sharing - tmate.io
+Name: Tmate
 Description: Tmate.io provides a simple binary to expose local terminal via tmate.io domains. These domains are accessible over the internet. Providing opportunity for insiders to expose local system, exfiltrate data, create backdoors via SSH etc.
 Author: Kamran Saifullah
 Created: 2024-10-08

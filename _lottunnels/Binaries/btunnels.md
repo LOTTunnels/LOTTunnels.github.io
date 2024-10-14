@@ -1,5 +1,5 @@
 ---
-Name: Broken Tunnels - Btunnels.exe
+Name: BTunnels
 Description: Broken Tunnels enables insiders as well as threat actors to expose local ports, local file system, local application over the internet via btunnels dynamic tunnel URLs.
 Author: Kamran Saifullah
 Created: 2024-10-05

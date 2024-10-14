@@ -1,5 +1,5 @@
 ---
-Name: Staqlab Tunnels - staqlab-tunnel.exe
+Name: StaqLab
 Description: Staqlab enables insider threats and threat actors to create fake account on the website as there is no validation for account registration. In the Domains Section, threat actors can define dedicated tunnels subdomain name. Using the token for the authorization on the local system will enable them to connect to dynamically generated domains or else specified domains.  
 Author: Kamran Saifullah
 Created: 2024-10-06

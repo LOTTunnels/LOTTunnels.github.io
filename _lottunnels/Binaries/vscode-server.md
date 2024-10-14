@@ -1,5 +1,5 @@
 ---
-Name: Visual Studio Code Server (code.exe)
+Name: VSCode Server
 Description: Utilizing installed Visual Studio Code Server Tunnels for exposing local development environment over the internet.
 Author: Kamran Saifullah
 Created: 2024-10-05

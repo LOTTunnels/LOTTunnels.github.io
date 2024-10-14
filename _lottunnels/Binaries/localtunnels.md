@@ -1,5 +1,5 @@
 ---
-Name: LocalTunnels - lt
+Name: LocalTunnels
 Description: LocalTunnels enables insiders as well as threat actors to expose local ports over the LocalTunnels generated links. The access is protected with a password. However, it can be accessed directly on the main page the first time tunnel is accessed. The important thing to note is that a service is required to be running onto the port which is required to be exposed. On the other hand, threat actors can set up their own listening server using LocalTunnels server provided on their GitHub page. This can be used by the insiders to exfiltrate the local data outside as well as threat actors to host phishing pages, malicious binaries etc.
 Author: Kamran Saifullah
 Created: 2024-10-13
