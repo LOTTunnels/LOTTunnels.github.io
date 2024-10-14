@@ -20,7 +20,7 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-  - Command: ./loophole path ./my-directory
+  - Command: ./loophole http 3000
     Description: Hosting malicious files over the loophole tunnels and downloading them over to the compromised host.
     Usecase: Downloading locally hosted malicious binaries exposed over loophole tunnels to download.
     Category: download
@@ -42,7 +42,7 @@ Commands:
     OperatingSystem: Windows, Mac, Linux
 
 Full_Path:
-  - Path: Installed version of expose binary/docker container, which gets executed anywhere on the system.
+  - Path: Installed/Downloaded version of loophole binary, which gets executed anywhere on the system.
 Detection:
   - Domain: 'loophole.eu.auth0.com/activate'
   - Domain: '*.loophole.site'
