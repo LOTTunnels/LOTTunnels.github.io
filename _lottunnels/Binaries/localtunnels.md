@@ -40,7 +40,7 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-  - Command: '*.loca.lt'
+  - Command: lt --port <PORT>
     Description: The URLs generated can be binded to a locally hosting phising page by the threat actors. 
     Usecase: Threat Actors binding the LocalTunnels port to the locally hosted Phishing Side and sending out the link to victims. 
     Category: phishing
