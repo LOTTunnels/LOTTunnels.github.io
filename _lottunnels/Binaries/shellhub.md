@@ -21,7 +21,7 @@ Commands:
     OperatingSystem: Mac, Linux
 
 Full_Path:
-  - Path: Installed/Downloaded version of loophole binary, which gets executed anywhere on the system.
+  - Path: Installed ShellHub script/docker container, which gets executed anywhere on the system.
 Detection:
   - Domain: '*.shellhub.io*'
   - Command: Execution of the installation command.
