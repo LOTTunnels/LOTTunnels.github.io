@@ -13,7 +13,7 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-  - Command: telebit http <PORT>>
+  - Command: telebit http <PORT>
     Description: Binding telebit tunnels to the local port running on the machine to expose the local applications over the tunnels. 
     Usecase: Exposing local applications over the internet via telebit tunnels. 
     Category: Access
@@ -27,21 +27,21 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-  - Command: telebit tcp <PORT>>
+  - Command: telebit tcp <PORT>
     Description: Binding telebit tunnels to the local SSH/RDP ports etc. for shell access.
     Usecase: Exposing local ports over the internet via telebit tunnels for shell access. 
     Category: shell-access
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-  - Command: telebit http <PORT>>
+  - Command: telebit http <PORT>
     Description: Binding telebit tunnels to the local file system/web server and exposing malicious binaries to be downloaded onto the compromised host.
     Usecase: Exposing locally hosted malicious binaries over the internet via telebit tunnels to be downloaded onto compromised host.
     Category: download
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-  - Command: telebit http <PORT>>
+  - Command: telebit http <PORT>
     Description: Binding telebit tunnels to the locally running phishing page to compromise users.
     Usecase: Exposing locally running phishing sites over the internet via telebit tunnels to compromise users.
     Category: phishing
