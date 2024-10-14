@@ -52,7 +52,9 @@ Full_Path:
   - Path: Installed version/In memory execution of telebit.
 Detection:
   - Domain: 'get.telebit.io'
-  - Domain: 
+  - Domain: '*.telebit.io'
+  - Domain: '*.telebit.cloud'
+  - Domain: '*.telebit.fun'
   - Command: Execution of the binary and/or with arguments.
 Resources:
   - Link: https://telebit.cloud/
