@@ -1,13 +1,12 @@
 ---
 Name: Burrow
 Description: Burrow is subscription based tool which enables local services/applications to be exposed over the internet. Insiders as well as threat actors can use this tool to perform variety of malicious tasks. Although, the tool requires an authentication token of which free token can be obtained from the website. The tunnels are required to be created from the dashboard first which generates a command to be executed locally onto the system to bind the service/port to the burrow tunnels.
-
 Author: Kamran Saifullah
 Created: 2024-10-14
 Commands:
   - Command: curl -Ls https://burrow.io/<RANDOM> | bash -s
-    Description: The URLs generated can be binded to a locally hosting phising page by the threat actors. 
-    Usecase: Threat Actors binding the LocalTunnels port to the locally hosted Phishing Side and sending out the link to victims. 
+    Description: The URLs generated can be binded to a locally hosting services via bash. 
+    Usecase: Binding the local machine to the externally generated burrow tunnels.
     Category: Access
     Privileges: User
     OperatingSystem: Mac, Linux
