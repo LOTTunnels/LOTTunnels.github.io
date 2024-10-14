@@ -19,7 +19,7 @@ Commands:
     OperatingSystem: Windows, Mac, Linux
 
 Full_Path:
-  - Path: Execution of dapalicity puthon moduel from anywhere on the system.
+  - Path: Execution of dapalicity python module from anywhere on the system.
 Detection:
   - Domain: '*.dataplicity.com'
   - Command: Execution of the command.
