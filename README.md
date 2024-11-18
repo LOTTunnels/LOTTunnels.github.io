@@ -11,6 +11,13 @@ However, most organizations are dealing with insider threats. Where the organiza
 
 It's a great opportunity for everyone to focus more on this side. 
 
+### Project Team
+
+This project is started by the below team members while having a casual discussion and understanding the need to have this project up and running for personal use. Though, together decided to make it public for everyone.
+
+- [Kamran Saifullah](https://www.linkedin.com/in/kamransaifullah/)
+- [Syed Daim Nusrati](https://www.linkedin.com/in/syed-daim/)
+
 ### Website Template Inspiration
 
 The inspiration of this project and site template is taken directly from (https://lolbas-project.github.io/) project. 
@@ -26,6 +33,3 @@ Kudos to the team for bringing in amazing projects.
 Everyone can reach out to me with any ideas, comments or feedback and feel free to contribute to the project as its always going to be free and accessible to the community. 
 
 Thank you.
-
-**Kamran Saifullah**
-https://www.linkedin.com/in/kamransaifullah/
