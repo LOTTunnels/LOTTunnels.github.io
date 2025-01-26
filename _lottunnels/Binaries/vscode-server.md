@@ -19,7 +19,7 @@ Commands:
     OperatingSystem: Windows, Mac, Linux
 
   - Command: Shell Access via Visual Studio Code Server Tunnels.
-    Description: Insider threat, external threat actor will be able to run commands on local system proxying via Miscrofot domains using the built-in VSCode Server Terminal. 
+    Description: Insider threat, external threat actor will be able to run commands on local system proxying via Microsoft domains using the built-in VSCode Server Terminal. 
     Usecase: Accessing & Deleting files, executing payloads, downloading payloads, running malware/ransomware etc.
     Category: shell-access
     Privileges: User
