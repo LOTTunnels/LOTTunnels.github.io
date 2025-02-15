@@ -1,6 +1,6 @@
 ---
 Name: VSCode GUI
-Description: Insiders as well as threat actors having GUI access to system can leverage this technique to create Visual Studio Tunnel links to exfiltrate the data.
+Description: Insiders as well as threat actors having GUI access to system can leverage this technique to create Visual Studio Remote Tunnel links to exfiltrate the data.
 Author: Kamran Saifullah
 Created: 2024-10-05
 Commands:
@@ -29,10 +29,13 @@ Full_Path:
   - Path: Downloaded version of Visual Studio Code, which gets executed anywhere on the system.
 Detection:
   - Domain: '*.devtunnels.ms*'
+  - Domain: '*.tunnels.api.visualstudio.com'
   - Sigma: https://github.com/SigmaHQ/sigma/blob/master/rules/windows/network_connection/net_connection_win_domain_devtunnels.yml
 Resources:
   - Link: https://valhalla.nextron-systems.com/info/sigma-rule/9501f8e6-8e3d-48fc-a8a6-1089dd5d7ef4
 Acknowledgement:
   - Person: Kamran Saifullah
     Handle: '@deFr0ggy'
+  - Person: Kirill Magaskin
+    Handle: '@k1rpi7ch'
 ---

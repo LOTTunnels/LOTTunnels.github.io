@@ -51,6 +51,7 @@ Full_Path:
   - Path: Downloaded version of PakeKite python program, which gets executed anywhere on the system.
 Detection:
   - Domain: '*.pagekite.net'
+  - Domain: '*.pagekite.me'
 Resources:
   - Link: https://pagekite.net/
 Acknowledgement:
