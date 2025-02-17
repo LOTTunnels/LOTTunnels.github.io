@@ -1,3 +1,4 @@
+---
 Name: Expose.sh
 Description: EXPOSE is your new favourite open source tool for exposing your local services on the public Internet.
 Author: Kirill Magaskin
@@ -19,3 +20,4 @@ Resources:
 Acknowledgement:
   - Person: Kirill Magaskin
     Handle: '@k1rpi7ch'
+---
