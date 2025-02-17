@@ -11,7 +11,7 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-    - Command: code.exe tunnel service install --accept-server-license-terms
+  - Command: code.exe tunnel service install --accept-server-license-terms
     Description: Generating Visual Studio Code Server Tunnels via VSCode built in Tunneling functionality and installing it as a service.
     Usecase: Generating Visual Studio Code Server Tunnels for exposing local dev environemnt over the internet.
     Category: exfiltrate
@@ -33,7 +33,7 @@ Commands:
     OperatingSystem: Windows, Mac, Linux
 
 Full_Path:
-  - Path: %UserProfile%\vscode-cli\code_tunnel.json
+  - Path: \%UserProfile%\vscode-cli\code_tunnel.json
   - Path: code.exe (standalone executable)
 Detection:
   - Domain: '*.devtunnels.ms*'
