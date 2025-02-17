@@ -1,3 +1,4 @@
+---
 Name: jkuri Bore
 Description: Reverse HTTP/TCP proxy tunnel via secure SSH connections.
 Author: Kirill Magaskin
@@ -20,3 +21,4 @@ Resources:
 Acknowledgement:
   - Person: Kirill Magaskin
     Handle: '@k1rpi7ch'
+---
