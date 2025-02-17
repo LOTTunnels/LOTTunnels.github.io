@@ -1,3 +1,4 @@
+---
 Name: LocaltoNet
 Description: LocaltoNet is a reverse proxy that enables you to expose your localhost services to the internet.
 Author: Kirill Magaskin
@@ -34,3 +35,4 @@ Resources:
 Acknowledgement:
   - Person: Kirill Magaskin
     Handle: '@k1rpi7ch'
+---
