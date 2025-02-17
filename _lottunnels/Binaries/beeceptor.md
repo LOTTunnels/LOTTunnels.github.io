@@ -1,3 +1,4 @@
+---
 Name: Beeceptor
 Description: The Beeceptor CLI is a developer tool to help you connect the localhost port with Beeceptor's public endpoint. It is easy to install, and works on all platforms (macOS, Windows, and Linux). The Beeceptor CLI can be installed using NPM or downloaded as an independent executable file.
 Author: Kirill Magaskin
@@ -19,3 +20,4 @@ Resources:
 Acknowledgement:
   - Person: Kirill Magaskin
     Handle: '@k1rpi7ch'
+---
