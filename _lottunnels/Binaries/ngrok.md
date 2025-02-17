@@ -22,15 +22,15 @@ Full_Path:
   - Path: ngrok.exe (standalone executable)
   - Path: ngrok (standalone executable)
 Detection:
-  - Domain: *.ngrok.com
-  - Domain: *.ngrok.io
-  - Domain: *.ngrok.dev
-  - Domain: *.ngrok.app
-  - Domain: *.ngrok.pro
-  - Domain: *.ngrok.pizza
-  - Domain: *.ngrok-agent.com
-  - Domain: *.ngrok-free.app
-  - Domain: *.ngrok-cname.com
+  - Domain: "*.ngrok.com"
+  - Domain: "*.ngrok.io"
+  - Domain: "*.ngrok.dev"
+  - Domain: "*.ngrok.app"
+  - Domain: "*.ngrok.pro"
+  - Domain: "*.ngrok.pizza"
+  - Domain: "*.ngrok-agent.com"
+  - Domain: "*.ngrok-free.app"
+  - Domain: "*.ngrok-cname.com"
   - Sigma: https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ngrok_network_sigma.yml
   - Sigma: https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ngrok_processes_sigma.yml
 Resources:
