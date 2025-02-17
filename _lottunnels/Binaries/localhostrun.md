@@ -1,3 +1,4 @@
+---
 Name: localhost.run
 Description: localhost.run is a client-less tool to instantly make a locally running application available on an internet accessible URL.
 Author: Kirill Magaskin
@@ -18,3 +19,4 @@ Resources:
 Acknowledgement:
   - Person: Kirill Magaskin
     Handle: '@k1rpi7ch'
+---
