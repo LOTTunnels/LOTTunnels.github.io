@@ -44,16 +44,8 @@
                               .join('\n').toLowerCase();
          var types = row.children[2].textContent.toLowerCase();
 
-         var against;
-         if (queryType === '/') {
-             against = functions;
-         } else if (queryType === '#') {
-             against = types;
-         } else {
-             against = binName;
-         }
-
-         if (against.indexOf(query) !== -1) {
+         // Check if the query matches any of the fields
+         if (binName.includes(query) || functions.includes(query) || types.includes(query)) {
              row.style.display = '';
              noResults = false;
          } else {
