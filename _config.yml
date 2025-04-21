@@ -1,7 +1,7 @@
----
+
 title: LOTTunnels
 
-exclude: ['/Gemfile', '/Makefile', '/README.md', '/NOTICE.md', 'LICENSE']
+exclude: ['/Gemfile', '/Makefile', '/README.md', '/NOTICE.md', 'LICENSE', '/YML-TEMPLATE.yml', '/scripts']
 
 permalink: pretty
 

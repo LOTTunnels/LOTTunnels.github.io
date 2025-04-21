@@ -24,7 +24,7 @@
 
 	<div class="function-list"><div><a href="/lottunnels/Binaries/vscode-gui/#access">Access</a></div><div><a href="/lottunnels/Binaries/vscode-gui/#exfiltrate">Exfiltration</a></div><div><a href="/lottunnels/Binaries/vscode-gui/#download">Download</a></div></div>
 
-	<p>Insiders as well as threat actors having GUI access to system can leverage this technique to create Visual Studio Tunnel links to exfiltrate the data.</p>
+	<p>Insiders as well as threat actors having GUI access to system can leverage this technique to create Visual Studio Remote Tunnel links to exfiltrate the data.</p>
 
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133649096-1"></script>
@@ -54,6 +54,7 @@
 		<h3>Acknowledgements:</h3>
 		<ul>
 			<li>Kamran Saifullah (<a href="https://twitter.com/@deFr0ggy">@deFr0ggy</a>)</li>
+			<li>Kirill Magaskin (<a href="https://twitter.com/@k1rpi7ch">@k1rpi7ch</a>)</li>
 		</ul>
 	</section>
 	
@@ -61,6 +62,7 @@
 		<h3>Detections:</h3>
 		<ul>
 			<li>Domain: <a href="*.devtunnels.ms*" target="_blank" data-shorten="true">*.devtunnels.ms*</a></li>
+			<li>Domain: <a href="*.tunnels.api.visualstudio.com" target="_blank" data-shorten="true">*.tunnels.api.visualstudio.com</a></li>
 			<li>Sigma: <a href="https://github.com/SigmaHQ/sigma/blob/master/rules/windows/network_connection/net_connection_win_domain_devtunnels.yml" target="_blank" data-shorten="true">https://github.com/SigmaHQ/sigma/blob/master/rules/windows/network_connection/net_connection_win_domain_devtunnels.yml</a></li>
 		</ul>
 	</section>

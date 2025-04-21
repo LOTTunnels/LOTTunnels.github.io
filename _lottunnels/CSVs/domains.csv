@@ -1,0 +1,74 @@
+domain,name
+*.shellhub.io*,ShellHub
+*.sharedwithexpose.com,Expose
+*.*.sharedwithexpose.com,Expose
+*.eu-1.sharedwithexpose.com,Expose
+*.us-1.sharedwithexpose.com,Expose
+*.us-2.sharedwithexpose.com,Expose
+*.ap-1.sharedwithexpose.com,Expose
+*.in-1.sharedwithexpose.com,Expose
+*.sa-1.sharedwithexpose.com,Expose
+*.au-1.sharedwithexpose.com,Expose
+*.eu-2.sharedwithexpose.com,Expose
+*.tuns.sh,TunnelTo
+*.ssi.sh,TunnelTo
+*.tunnelto.dev,TunnelTo
+*.pagekite.net,PageKite
+*.pagekite.me,PageKite
+*.loca.lt,Rust LocalTunnels
+*.localtunnel.me,Rust LocalTunnels
+*.dataplicity.com,Dataplicity
+*.devtunnels.ms*,VSCode CLI
+*.tunnels.api.visualstudio.com,VSCode CLI
+get.telebit.io,Telebit
+*.telebit.io,Telebit
+*.telebit.cloud,Telebit
+*.telebit.fun,Telebit
+*.devtunnels.ms,Dev Tunnels
+*.data.rel.tunnels.api.visualstudio.com,Dev Tunnels
+*.rel.tunnels.api.visualstudio.com,Dev Tunnels
+*.global.rel.tunnels.api.visualstudio.com,Dev Tunnels
+*.localhost.run,localhost.run
+*.pinggy.io,Pinggy
+*.pinggy.link,Pinggy
+*.*.amazonaws.com/public.pinggy.binaries/*,Pinggy
+loophole.eu.auth0.com,Loophole
+*.loophole.site,Loophole
+*.burrow.io,Burrow
+*.burrow.link,Burrow
+io.burrow.link:*,Burrow
+*.localto.net,LocaltoNet
+*.localtonet.com,LocaltoNet
+*.tmate.io,Tmate
+*.tunnel.staqlab.com,StaqLab
+*.staqlab-tunnel.com,StaqLab
+*.staqlab.com,StaqLab
+*.devtunnels.ms*,VSCode GUI
+*.tunnels.api.visualstudio.com,VSCode GUI
+*.jprq.io,JPRQ
+bore.pub:*,Bore
+*.btunnel.co.in,BTunnels
+*.btunnel.in,BTunnels
+*.ngrok.com,ngrok
+*.ngrok.io,ngrok
+*.ngrok.dev,ngrok
+*.ngrok.app,ngrok
+*.ngrok.pro,ngrok
+*.ngrok.pizza,ngrok
+*.ngrok-agent.com,ngrok
+*.ngrok-free.app,ngrok
+*.ngrok-cname.com,ngrok
+*.serveo.net,Serveo
+*pitunnel.com,PiTunnel
+openport.io,OpenPort
+*.beeceptor.com,Beeceptor
+*.loca.lt,LocalTunnels
+*.localtunnel.me,LocalTunnels
+*.localxpose.io,LocalXpose
+expose.sh,Expose.sh
+*.expos.es,Expose.sh
+*.trycloudflare.com,Cloudflared
+*.cfargotunnel.com,Cloudflared
+*.cftunnel.com,Cloudflared
+bore.digital:*,jkuri Bore
+*.bore.digital,jkuri Bore
