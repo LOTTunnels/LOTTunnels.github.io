@@ -38,7 +38,7 @@ Full_Path:
 Detection:
   - Domain: '*.devtunnels.ms*'
   - Domain: '*.tunnels.api.visualstudio.com'
-  - Domain: 'https://vscode.dev/tunnel/*'
+  - URL: 'https://vscode.dev/tunnel/*'
   - Sigma: https://github.com/SigmaHQ/sigma/blob/master/rules/windows/network_connection/net_connection_win_domain_devtunnels.yml
   - Command: Execution of the binary with arguments.
 Resources:

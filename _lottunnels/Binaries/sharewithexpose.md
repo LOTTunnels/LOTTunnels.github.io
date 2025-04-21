@@ -66,6 +66,7 @@ Full_Path:
   - Path: Installed version of expose binary/docker container, which gets executed anywhere on the system.
 Detection:
   - Domain: '*.sharedwithexpose.com'
+  - Domain: '*.*.sharedwithexpose.com' 
   - Domain: '*.eu-1.sharedwithexpose.com'
   - Domain: '*.us-1.sharedwithexpose.com'
   - Domain: '*.us-2.sharedwithexpose.com'

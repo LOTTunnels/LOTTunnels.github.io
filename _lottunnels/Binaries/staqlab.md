@@ -26,12 +26,14 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Mac, Linux, Raspberry Pi
 
+Custom_Domain: True
 Full_Path:
   - Path: Downloaded version of Staqlab-tunnels.exe, which gets executed anywhere on the system.
 Detection:
   - Domain: '*.tunnel.staqlab.com'
-  - Domain: 'https://tunnel.staqlab.com/inspector/<4 Digits>/inspector'
+  - URL: 'https://tunnel.staqlab.com/inspector/*/inspector'
   - Domain: '*.staqlab-tunnel.com'
+  - Domain: '*.staqlab.com'
   - Command: Execution of the binary and/or with arguments. 
 Acknowledgement:
   - Person: Kamran Saifullah

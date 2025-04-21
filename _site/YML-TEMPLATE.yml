@@ -1,0 +1,22 @@
+name: 
+description: 
+author: 
+created: 
+commands:
+  - command: 
+    description: 
+    usecase: 
+    category: 
+    privileges: 
+    operating_system: 
+custom_domain:
+full_path:
+  - path: 
+detection:
+  - domain: 
+  - command: 
+resources:
+  - link: 
+acknowledgement:
+  - person: 
+    handle: 

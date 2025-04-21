@@ -44,7 +44,8 @@ Commands:
 Full_Path:
   - Path: Installed/Downloaded version of loophole binary, which gets executed anywhere on the system.
 Detection:
-  - Domain: 'loophole.eu.auth0.com/activate'
+  - URL: 'loophole.eu.auth0.com/activate'
+  - Domain: 'loophole.eu.auth0.com'
   - Domain: '*.loophole.site'
   - Command: Execution of the binary and/or with arguments.
 Resources:

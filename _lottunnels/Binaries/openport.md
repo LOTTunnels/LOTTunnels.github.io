@@ -1,3 +1,4 @@
+---
 Name: OpenPort
 Description: Openport builds a secure tunnel from your device to the outside world, so you can connect to your device from anywhere.
 Author: Kirill Magaskin
@@ -13,10 +14,11 @@ Commands:
 Full_Path:
   - Path: Quick Start/Installed version of jprq, which gets executed anywhere on the system.
 Detection:
-  - Domain: 'https://openport.io/*'
+  - Domain: 'openport.io'
   - Command: Execution of the binary and/or with arguments.
 Resources:
   - Link: https://openport.readthedocs.io/en/latest/usage.html#installation
 Acknowledgement:
   - Person: Kirill Magaskin
     Handle: '@k1rpi7ch'
+---
