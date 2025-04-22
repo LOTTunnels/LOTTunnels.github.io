@@ -22,7 +22,7 @@ Living Off The Tunnels a.k.a LOTTunnels Project is community driven project to d
 The inspiration of this project and site template is taken directly from <a href="https://lolbas-project.github.io/">LOLBAS</a> project.
 <br>
 
-<br>For a CSV of all of the domains recorded, please click <a href='https://github.com/LOTTunnels/LOTTunnels.github.io/tree/main/_lottunnels/CSVs)/domains.csv'>here</a>
+<br>For a CSV of all of the domains recorded, please click <a href='https://github.com/LOTTunnels/LOTTunnels.github.io/tree/main/_lottunnels/CSVs/domains.csv'>here</a>
 </div>
 </div>
 
