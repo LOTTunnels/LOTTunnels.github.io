@@ -1,3 +1,4 @@
+---
 name: 
 description: 
 author: 
@@ -9,7 +10,7 @@ commands:
     category: 
     privileges: 
     operating_system: 
-custom_domain:
+Custom_Domain_Supported:
 full_path:
   - path: 
 detection:
@@ -20,3 +21,4 @@ resources:
 acknowledgement:
   - person: 
     handle: 
+---

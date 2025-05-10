@@ -19,8 +19,8 @@ Commands:
     OperatingSystem: Windows, Mac, Linux
 
 Full_Path:
-  - Path: ngrok.exe (standalone executable)
-  - Path: ngrok (standalone executable)
+  - Filename: ngrok.exe
+  - Path: ngrok
 Detection:
   - Domain: "*.ngrok.com"
   - Domain: "*.ngrok.io"
@@ -31,12 +31,14 @@ Detection:
   - Domain: "*.ngrok-agent.com"
   - Domain: "*.ngrok-free.app"
   - Domain: "*.ngrok-cname.com"
+  - Domain: "*.equinox.io"
   - Sigma: https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ngrok_network_sigma.yml
   - Sigma: https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ngrok_processes_sigma.yml
 Resources:
   - Link: https://ngrok.com
   - Link: https://github.com/ngrok/ngrok
   - Link: https://github.com/inconshreveable/ngrok
+  - Link: https://www.logpoint.com/en/blog/a-deep-look-at-the-darkside-ransomware-operators-and-their-affiliates/
 Acknowledgement:
   - Person: Dan O'Day
     Handle: '@4n68r'
