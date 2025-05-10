@@ -1,6 +1,7 @@
 import os
 import yaml
 import csv
+import shutil
 
 # Define the path to the cloned repository
 repo_path = "../_lottunnels/Binaries"
@@ -50,3 +51,15 @@ with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
     writer.writerows(entries)
 
 print(f"CSV file saved to {output_file}")
+
+# Define the destination path
+destination_folder = "../_lottunnels/CSVs/"
+
+if not os.path.exists(destination_folder):
+    os.makedirs(destination_folder)
+
+destination_path = os.path.join(destination_folder, output_file)
+
+# Move the file
+shutil.move(output_file, destination_path)
+print(f"CSV file moved to {destination_path}")

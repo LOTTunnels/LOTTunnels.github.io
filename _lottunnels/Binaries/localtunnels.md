@@ -46,7 +46,7 @@ Commands:
     Category: phishing
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
-
+Custom_Domain_Supported: True
 Full_Path:
   - Path: Quick Start/Installed version of LocalTunnels, which gets executed anywhere on the system.
 Detection:

@@ -58,6 +58,7 @@ bore.pub:*,Bore
 *.ngrok-agent.com,ngrok
 *.ngrok-free.app,ngrok
 *.ngrok-cname.com,ngrok
+*.equinox.io,ngrok
 *.serveo.net,Serveo
 *pitunnel.com,PiTunnel
 openport.io,OpenPort
