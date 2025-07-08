@@ -73,3 +73,6 @@ expose.sh,Expose.sh
 *.cftunnel.com,Cloudflared
 bore.digital:*,jkuri Bore
 *.bore.digital,jkuri Bore
+*.qsocket.io,Qsocket
+*.gsocket.io,Gsocket
+tailscale.com,Tailscale
