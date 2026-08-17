@@ -29,6 +29,8 @@ get.telebit.io,Telebit
 *.rel.tunnels.api.visualstudio.com,Dev Tunnels
 *.global.rel.tunnels.api.visualstudio.com,Dev Tunnels
 *.localhost.run,localhost.run
+ssh-j.com,SSH-J
+sshjmpnoutfqotbj6r3acexiwoalgkth55y5kys7js3px2qqqrwuhqqd.onion,SSH-J
 *.pinggy.io,Pinggy
 *.pinggy.link,Pinggy
 *.*.amazonaws.com/public.pinggy.binaries/*,Pinggy
@@ -73,6 +75,3 @@ expose.sh,Expose.sh
 *.cftunnel.com,Cloudflared
 bore.digital:*,jkuri Bore
 *.bore.digital,jkuri Bore
-*.qsocket.io,Qsocket
-*.gsocket.io,Gsocket
-tailscale.com,Tailscale
