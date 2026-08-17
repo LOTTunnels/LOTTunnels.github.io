@@ -27,6 +27,5 @@ Resources:
   - Link: https://ssh-j.com/
   - Link: https://bitbucket.org/ValdikSS/dropbear-sshj/
 Acknowledgement:
-  - Person: ValdikSS
-    Handle: ''
+  - Person: Jeffrey Tigchelaar-Moerbeek
 ---
