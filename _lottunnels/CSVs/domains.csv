@@ -1,4 +1,8 @@
 domain,name
+tailscale.com,Tailscale
+*.tailscale.io,Tailscale
+*.ts.net,Tailscale
+*.qsocket.io,Qsocket
 *.shellhub.io*,ShellHub
 *.sharedwithexpose.com,Expose
 *.*.sharedwithexpose.com,Expose
@@ -29,6 +33,12 @@ get.telebit.io,Telebit
 *.rel.tunnels.api.visualstudio.com,Dev Tunnels
 *.global.rel.tunnels.api.visualstudio.com,Dev Tunnels
 *.localhost.run,localhost.run
+*.oast.pro,interactsh
+*.oast.live,interactsh
+*.oast.site,interactsh
+*.oast.online,interactsh
+*.oast.fun,interactsh
+*.oast.me,interactsh
 ssh-j.com,SSH-J
 sshjmpnoutfqotbj6r3acexiwoalgkth55y5kys7js3px2qqqrwuhqqd.onion,SSH-J
 *.pinggy.io,Pinggy
@@ -62,6 +72,7 @@ bore.pub:*,Bore
 *.ngrok-cname.com,ngrok
 *.equinox.io,ngrok
 *.serveo.net,Serveo
+*.gsocket.io,Gsocket
 *pitunnel.com,PiTunnel
 openport.io,OpenPort
 *.beeceptor.com,Beeceptor
