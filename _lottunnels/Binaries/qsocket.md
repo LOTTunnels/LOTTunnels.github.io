@@ -7,7 +7,7 @@ Commands:
   - Command: qs-netcat -s MySecret -l -i
     Description: Server-side of a reverse PTY shell. Spawns a true interactive login shell when a client connects using the same secret.
     Usecase: Interactive reverse shell access to a host behind NAT/firewall.
-    Category: Shell Access
+    Category: Access
     Privileges: User
     OperatingSystem: Windows, Linux, MacOS
 
