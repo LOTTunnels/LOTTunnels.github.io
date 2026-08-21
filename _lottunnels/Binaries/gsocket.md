@@ -14,7 +14,7 @@ Commands:
   - Command: gs-netcat -s MySecret -i
     Description: Client-side connection to the gs-netcat listening server, giving a real interactive PTY shell.
     Usecase: Connecting to a reverse shell hosted behind NAT/firewall.
-    Category: Shell Access
+    Category: Access
     Privileges: User
     OperatingSystem: Linux, MacOS, BSD, Windows
 
