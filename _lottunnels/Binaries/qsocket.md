@@ -14,7 +14,7 @@ Commands:
   - Command: qs-netcat -s MySecret -i
     Description: Client-side connection to the qs-netcat listening server, giving a real interactive PTY shell.
     Usecase: Connecting to a reverse shell hosted behind NAT/firewall.
-    Category: Shell Access
+    Category: Access
     Privileges: User
     OperatingSystem: Windows, Linux, MacOS
 
@@ -25,9 +25,7 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Linux, MacOS
 Full_Path:
-  - Filename: qs-netcat
-  - Filename: qs-lite
-  - Filename: qs-proxy
+a  - Filename: qs-proxy
 Detection:
   - Domain: '*.qsocket.io'
   - Command: Execution of qs-netcat/qs-lite/qs-proxy binaries, including with -s <secret>, -l, -i, -e or -f arguments.
