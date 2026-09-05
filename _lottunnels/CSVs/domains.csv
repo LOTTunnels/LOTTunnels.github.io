@@ -86,3 +86,7 @@ expose.sh,Expose.sh
 *.cftunnel.com,Cloudflared
 bore.digital:*,jkuri Bore
 *.bore.digital,jkuri Bore
+tc301a.ipn.dev,Tailcat
+tc302a.ipn.dev,Tailcat
+tc303a.ipn.dev,Tailcat
+tc304a.ipn.dev,Tailcat
