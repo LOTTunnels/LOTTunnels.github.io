@@ -26,7 +26,7 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Mac, Linux, Raspberry Pi
 
-Custom_Domain: True
+Custom_Domain_Supported: True
 Full_Path:
   - Path: Downloaded version of Staqlab-tunnels.exe, which gets executed anywhere on the system.
 Detection:

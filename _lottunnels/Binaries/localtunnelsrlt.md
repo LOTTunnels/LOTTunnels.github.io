@@ -28,11 +28,11 @@ Commands:
 
 Full_Path:
   - Path: Quick Start/Installed version of LocalTunnels rlt, which gets executed anywhere on the system.
-Custom_Domain_Supported_: True
+Custom_Domain_Supported: True
 Detection:
   - Domain: '*.loca.lt'
   - Domain: '*.localtunnel.me'
-  - Commands: Execution of the binary and/or with arguments.
+  - Command: Execution of the binary and/or with arguments.
 Resources:
   - Link: https://github.com/kaichaosun/rlt
 Acknowledgement:
