@@ -1,0 +1,9 @@
+---
+layout: null
+permalink: /binaries.csv
+---
+Name,Description,OperatingSystem,Website
+{% for b in site.lottunnels -%}
+{%- assign os = b.Commands | map: "OperatingSystem" | uniq | join: ";" -%}
+"{{ b.Name | replace: '"', '""' }}","{{ b.Description | replace: '"', '""' | strip_newlines }}","{{ os }}","{{ b.Resources[0].Link | default: '' }}"
+{% endfor %}
