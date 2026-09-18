@@ -1,24 +1,27 @@
 ---
-name: 
-description: 
-author: 
-created: 
-commands:
-  - command: 
-    description: 
-    usecase: 
-    category: 
-    privileges: 
-    operating_system: 
+Name:
+Description:
+Author:
+Created:
+Commands:
+  - Command:
+    Description:
+    Usecase:
+    Category:
+    Privileges:
+    OperatingSystem:
 Custom_Domain_Supported:
-full_path:
-  - path: 
-detection:
-  - domain: 
-  - command: 
-resources:
-  - link: 
-acknowledgement:
-  - person: 
-    handle: 
+Full_Path:
+  - Path:
+  - Filename:
+Detection:
+  - Domain:
+  - Command:
+  - URL:
+  - Sigma:
+Resources:
+  - Link:
+Acknowledgement:
+  - Person:
+    Handle:
 ---

@@ -1,0 +1,52 @@
+name: Validate binary entries
+
+on:
+  pull_request:
+    paths:
+      - "_lottunnels/Binaries/**.md"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r _scripts/requirements.txt
+
+      - name: Determine changed entry files
+        id: changed
+        run: |
+          set -euo pipefail
+          git fetch origin "${{ github.event.pull_request.base.sha }}" --depth=1
+          mapfile -t files < <(
+            git diff --name-only --diff-filter=ACMR \
+              "${{ github.event.pull_request.base.sha }}" \
+              "${{ github.event.pull_request.head.sha }}" \
+              -- '_lottunnels/Binaries/*.md'
+          )
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "has_files=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_files=true" >> "$GITHUB_OUTPUT"
+            printf '%s\n' "${files[@]}" > changed_files.txt
+          fi
+
+      - name: Validate changed entries against schema
+        if: steps.changed.outputs.has_files == 'true'
+        run: |
+          set -euo pipefail
+          mapfile -t files < changed_files.txt
+          python _scripts/validate_entry.py "${files[@]}"

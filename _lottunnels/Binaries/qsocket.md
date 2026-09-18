@@ -25,7 +25,7 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Linux, MacOS
 Full_Path:
-a  - Filename: qs-proxy
+  - Filename: qs-proxy
 Detection:
   - Domain: '*.qsocket.io'
   - Command: Execution of qs-netcat/qs-lite/qs-proxy binaries, including with -s <secret>, -l, -i, -e or -f arguments.
