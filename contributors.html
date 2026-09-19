@@ -3,7 +3,7 @@ layout: page
 title: Contributors
 ---
 <script>
-    async function findGitHubContributors() {
+    document.addEventListener('DOMContentLoaded', async function () {
         const container = document.getElementById("contributors");
         if (!container) return;
 
@@ -11,37 +11,46 @@ title: Contributors
         let next_page = 'https://api.github.com/repos/LOTTunnels/LOTTunnels.github.io/contributors?anon=false';
         let contributors = [];
 
-        while (next_page) {
-            let githubApi = await fetch(next_page, {
-                headers: {
-                    'Accept': 'application/vnd.github+json'
-                }
-            });
-            next_page = (PATTERN.exec(githubApi.headers.get("link")) || [null, null])[1];
-            const pageContributors = await githubApi.json();
-            contributors.push(...pageContributors);
-        }
+        try {
+            while (next_page) {
+                let githubApi = await fetch(next_page, {
+                    headers: {
+                        'Accept': 'application/vnd.github+json'
+                    }
+                });
 
-        contributors
-            .sort((a, b) => b.contributions - a.contributions)
-            .forEach(function (contributor) {
-                const card = document.createElement('div');
-                card.className = 'contributor-card';
-                card.innerHTML = `
-                    <a class="contributor-avatar" href="https://github.com/${contributor.login}" target="_blank" rel="noopener noreferrer">
-                        <img src="https://avatars.githubusercontent.com/u/${contributor.id}?s=120&v=4" alt="Avatar of ${contributor.login}">
-                    </a>
-                    <div class="contributor-meta">
-                        <a class="contributor-name" href="https://github.com/${contributor.login}" target="_blank" rel="noopener noreferrer">${contributor.login}</a>
-                        <a class="contributor-count" href="https://github.com/LOTTunnels/LOTTunnels.github.io/commits?author=${contributor.login}" target="_blank" rel="noopener noreferrer">
-                            ${contributor.contributions} contribution${contributor.contributions === 1 ? '' : 's'}
+                if (!githubApi.ok) {
+                    throw new Error('GitHub API request failed with status ' + githubApi.status);
+                }
+
+                next_page = (PATTERN.exec(githubApi.headers.get("link")) || [null, null])[1];
+                const pageContributors = await githubApi.json();
+                contributors.push(...pageContributors);
+            }
+
+            contributors
+                .sort((a, b) => b.contributions - a.contributions)
+                .forEach(function (contributor) {
+                    const card = document.createElement('div');
+                    card.className = 'contributor-card';
+                    card.innerHTML = `
+                        <a class="contributor-avatar" href="https://github.com/${contributor.login}" target="_blank" rel="noopener noreferrer">
+                            <img src="https://avatars.githubusercontent.com/u/${contributor.id}?s=120&v=4" alt="Avatar of ${contributor.login}">
                         </a>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-    }
-    findGitHubContributors();
+                        <div class="contributor-meta">
+                            <a class="contributor-name" href="https://github.com/${contributor.login}" target="_blank" rel="noopener noreferrer">${contributor.login}</a>
+                            <a class="contributor-count" href="https://github.com/LOTTunnels/LOTTunnels.github.io/commits?author=${contributor.login}" target="_blank" rel="noopener noreferrer">
+                                ${contributor.contributions} contribution${contributor.contributions === 1 ? '' : 's'}
+                            </a>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+        } catch (error) {
+            console.error('Error loading contributors:', error);
+            container.innerHTML = '<p>Unable to load contributor data right now.</p>';
+        }
+    });
 </script>
 
 <p>We thank everyone who has contributed to this project via our <a href="https://github.com/LOTTunnels/LOTTunnels.github.io">GitHub repository</a>:</p>
