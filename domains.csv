@@ -1,0 +1,12 @@
+---
+layout: null
+permalink: /domains.csv
+---
+domain,name
+{% for b in site.lottunnels -%}
+{%- for d in b.Detection -%}
+{%- if d.Domain -%}
+"{{ d.Domain | replace: '"', '""' }}","{{ b.Name | replace: '"', '""' }}"
+{% endif -%}
+{%- endfor -%}
+{%- endfor -%}
