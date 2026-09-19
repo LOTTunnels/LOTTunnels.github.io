@@ -266,26 +266,33 @@ ul {
 
 #contributors {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
     min-height: 50px;
     margin-top: 1.25rem;
+    align-items: stretch;
 }
 
 .contributor-card {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 12px;
+    min-height: 110px;
+    padding: 14px 16px;
     border: 1px solid $accent;
-    border-radius: 10px;
+    border-radius: 12px;
     background: rgba(0, 0, 0, 0.02);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+.contributor-avatar {
+    flex-shrink: 0;
 }
 
 .contributor-avatar img {
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     display: block;
     border: 2px solid $accent;
@@ -294,25 +301,46 @@ ul {
 .contributor-meta {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    justify-content: center;
+    gap: 6px;
     min-width: 0;
+    width: 100%;
 }
 
 .contributor-name {
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     color: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .contributor-count {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
-    padding: 4px 8px;
+    max-width: 100%;
+    padding: 5px 10px;
     border-radius: 999px;
     font-size: 0.8rem;
     background: rgba($accent, 0.12);
     color: inherit;
     text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    #contributors {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    #contributors {
+        grid-template-columns: 1fr;
+    }
 }
 
 .tags {
