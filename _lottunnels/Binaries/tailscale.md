@@ -14,7 +14,7 @@ Commands:
   - Command: tailscale up --ssh
     Description: Enables Tailscale SSH on the device, intercepting port 22 traffic from the tailnet and permitting access per the tailnet ACL policy.
     Usecase: Remote shell access to a host without traditional SSH keys/password.
-    Category: Shell Access
+    Category: Access
     Privileges: User
     OperatingSystem: Windows, Linux, MacOS, BSD
 
