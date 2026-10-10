@@ -29,21 +29,10 @@ title: LOTTunnels
 
 <p class="home-note">Inspired by the <a href="https://lolbas-project.github.io/">LOLBAS project</a>. Thank you to everyone who contributes to the community.</p>
 
-<section class="usage-section" aria-labelledby="usage-heading">
-  <h2 id="usage-heading">Projects using LOTTunnels</h2>
-  <p>Examples of projects and community posts featuring LOTTunnels.</p>
-  <div class="usage-cards">
-    <a class="usage-card" href="https://github.com/jeffreytigch/PreventKit" target="_blank" rel="noopener noreferrer">
-      <span class="usage-source">GitHub project</span>
-      <strong>PreventKit</strong>
-      <span>Explore the project on GitHub</span>
-    </a>
-    <a class="usage-card" href="https://lnkd.in/p/dc8_H4Gy" target="_blank" rel="noopener noreferrer">
-      <span class="usage-source">Community post</span>
-      <strong>LOTTunnels on LinkedIn</strong>
-      <span>View the LinkedIn post</span>
-    </a>
-  </div>
+<section class="usage-section" aria-label="LOTTunnels references">
+  <span class="usage-label">Featured in</span>
+  <a class="usage-link" href="https://github.com/jeffreytigch/PreventKit" target="_blank" rel="noopener noreferrer">PreventKit ↗</a>
+  <a class="usage-link" href="https://lnkd.in/p/dc8_H4Gy" target="_blank" rel="noopener noreferrer">LinkedIn post ↗</a>
 </section>
 
 [functions]: /functions/

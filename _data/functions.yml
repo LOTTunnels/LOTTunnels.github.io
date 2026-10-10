@@ -38,3 +38,8 @@ phishing:
   label: Phishing
   description: |
     The LOTTS can be used for Phishing Campaigns.
+
+persistence:
+  label: Persistence
+  description: |
+    The LOTTS can establish persistence in the target system.

@@ -6,7 +6,7 @@ $hover: #075e68;
 
 // layout
 
-$column-width: 880px;
+$column-width: 1180px;
 $grace-space: 200px;
 $layout-break: "(min-width: #{$column-width + $grace-space})";
 
@@ -448,7 +448,7 @@ html {
 }
 
 body {
-    width: min(880px, calc(100% - 2rem));
+    width: min(1180px, calc(100% - 2rem));
     margin: clamp(1.5rem, 5vw, 3.5rem) auto;
     padding: clamp(1.25rem, 4vw, 2.5rem);
     border: 1px solid #e1eaee;
@@ -582,59 +582,37 @@ pre {
 }
 
 .usage-section {
-    margin: 2rem 0;
-}
-
-.usage-section h2 {
-    margin-bottom: 0.35rem;
-}
-
-.usage-section > p {
-    margin-top: 0;
-    color: #58717a;
-}
-
-.usage-cards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.85rem;
-}
-
-.usage-card {
     display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-    min-width: 0;
-    padding: 1rem 1.1rem;
-    border: 1px solid #e1eaee;
-    border-radius: 12px;
-    background: #fbfdfe;
-    text-decoration: none;
-    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.25rem 0 1.75rem;
 }
 
-.usage-card:hover {
-    transform: translateY(-2px);
-    border-color: #b8dadd;
-    box-shadow: 0 8px 20px rgba(19, 54, 67, 0.08);
-}
-
-.usage-card strong {
-    color: #153640;
-    font-size: 1.1rem;
-}
-
-.usage-card > span:last-child {
+.usage-label {
+    margin-right: 0.15rem;
     color: #58717a;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 650;
 }
 
-.usage-source {
-    color: $accent;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
+.usage-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0.3rem 0.65rem;
+    border: 1px solid #d3e4e7;
+    border-radius: 999px;
+    background: #f7fbfc;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.usage-link:hover {
+    border-color: #a9cdd1;
+    background: #edf8f8;
 }
 
 #bin-search {
@@ -810,10 +788,6 @@ pre {
     .home-hero {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .usage-cards {
-        grid-template-columns: 1fr;
     }
 
     #bin-table {

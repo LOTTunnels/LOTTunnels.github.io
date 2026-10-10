@@ -7,7 +7,7 @@ Commands:
   - Command: cargo install sendme && sendme send <file>
     Description: Installs sendme and sends a file. Outputs a ticket the receiver uses to download it over an encrypted P2P connection.
     Usecase: Exfiltrating files over an encrypted P2P tunnel that bypasses NATs and firewalls.
-    Category: Exfiltration
+    Category: exfiltrate
     Privileges: User
     OperatingSystem: Windows, Linux, MacOS
   - Command: sendme receive <ticket>
