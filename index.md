@@ -32,7 +32,7 @@ title: LOTTunnels
 <section class="usage-section" aria-label="LOTTunnels references">
   <span class="usage-label">Featured in</span>
   <a class="usage-link" href="https://github.com/jeffreytigch/PreventKit" target="_blank" rel="noopener noreferrer">PreventKit ↗</a>
-  <a class="usage-link" href="https://lnkd.in/p/dc8_H4Gy" target="_blank" rel="noopener noreferrer">LinkedIn post ↗</a>
+  <a class="usage-link" href="https://lnkd.in/p/dc8_H4Gy" target="_blank" rel="noopener noreferrer">MagicSword ↗</a>
 </section>
 
 [functions]: /functions/
