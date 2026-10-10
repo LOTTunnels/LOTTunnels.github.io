@@ -25,30 +25,47 @@
   gtag('config', 'UA-133649096-1');
 </script>
 
-<div class="header-box">
-<a href="https://github.com/LOTTunnels/LOTTunnels.github.io/blob/master/README.md"><img src="/assets/logo.png" height="150" alt="LOTTunnels Logo" style="margin-right: 10px;" /></a>
-<div>
-<h2 style="margin-top: 0">Living Off The Tunnels</h2>
-Living Off The Tunnels a.k.a LOTTunnels Project is community driven project to document digital tunnels that can be abused by threat actors as well by insiders for data exfiltrations, persistence, shell access etc. 
-
-<br /><br />Special thanks to all the <a href="https://lottunnels.github.io/contributors/">contributors</a> as this would not be possible without community support.
-<br /><br />
-The inspiration of this project and site template is taken directly from <a href="https://lolbas-project.github.io/">LOLBAS</a> project.
-<br />
-
-<br />For a CSV of all of the domains recorded, please click <a href="https://github.com/LOTTunnels/LOTTunnels.github.io/tree/main/_lottunnels/CSVs)/domains.csv">here</a>
+<div class="home-hero">
+  <a href="https://github.com/LOTTunnels/LOTTunnels.github.io/blob/master/README.md">
+    <img src="/assets/logo.png" alt="LOTTunnels Logo" />
+  </a>
+  <div>
+    <h2>Living Off The Tunnels</h2>
+    <p>LOTTunnels is a community-driven project documenting digital tunneling tools and how they can be abused for data exfiltration, persistence, and shell access.</p>
+    <nav class="home-actions" aria-label="Explore LOTTunnels">
+      <a href="#binary-directory">Browse the catalog</a>
+      <a href="/contributors/">Meet the contributors</a>
+      <a href="https://lottunnels.github.io/domains.csv">Domains CSV</a>
+      <a href="https://lottunnels.github.io/binaries.csv">Binaries CSV</a>
+    </nav>
+  </div>
 </div>
-</div>
 
-<p><input id="bin-search" type="text" placeholder="Search among the Binary Names, Functions &amp; Types" /></p>
+<p class="home-note">Inspired by the <a href="https://lolbas-project.github.io/">LOLBAS project</a>. Thank you to everyone who contributes to the community.</p>
 
-<div id="bin-table-wrapper">
+<section class="usage-section" aria-label="LOTTunnels references">
+  <span class="usage-label">Featured in</span>
+  <a class="usage-link" href="https://github.com/jeffreytigch/PreventKit" target="_blank" rel="noopener noreferrer">PreventKit ↗</a>
+  <a class="usage-link" href="https://lnkd.in/p/dc8_H4Gy" target="_blank" rel="noopener noreferrer">MagicSword ↗</a>
+  <a class="usage-link" href="https://x.com/hackinarticles/status/2097932225581142296" target="_blank" rel="noopener noreferrer">HackingArticles ↗</a>
+  <a class="usage-link" href="https://netwerklabs.com/living-off-the-land-lotl-resources/" target="_blank" rel="noopener noreferrer">NetwerkLabs ↗</a>
+  <a class="usage-link" href="https://tldrsec.com/p/tldr-sec-266" target="_blank" rel="noopener noreferrer">tl;dr sec ↗</a>
+  <a class="usage-link" href="https://x.com/kaspersky/status/1889566924847096288" target="_blank" rel="noopener noreferrer">KasperSky ↗</a>
+  <a class="usage-link" href="https://lolol.farm/" target="_blank" rel="noopener noreferrer">lolol.farm ↗</a>
+</section>
+
+<section id="binary-directory" aria-label="Binary catalog">
+<h2>Explore the catalog</h2>
+<p>Search binaries by name, function, or type.</p>
+<input id="bin-search" type="search" aria-label="Search binaries by name, function, or type" placeholder="Search binaries by name, function, or type" />
+
+<div id="bin-table-wrapper" role="region" tabindex="0" aria-label="Binary catalog table; scroll horizontally on small screens">
     <table id="bin-table">
         <thead>
             <tr>
-                <th style="width: 45%">Binary</th>
-                <th style="width: 20%">Functions</th>
-                <th style="width: 20%">Type</th>
+                <th scope="col" style="width: 45%">Binary</th>
+                <th scope="col" style="width: 35%">Functions</th>
+                <th scope="col" style="width: 20%">Type</th>
             </tr>
         </thead>
         <tbody>
@@ -82,6 +99,13 @@ The inspiration of this project and site template is taken directly from <a href
             </tr>
             
             <tr>
+                <td><a href="/lottunnels/Binaries/chisel/" class="bin-name">Chisel</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/chisel/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
                 <td><a href="/lottunnels/Binaries/cloudflared/" class="bin-name">Cloudflared</a></td>
                 <td><div class="function-list"><div><a href="/lottunnels/Binaries/cloudflared/#exfiltrate">Exfiltration</a></div><div><a href="/lottunnels/Binaries/cloudflared/#phishing">Phishing</a></div><div><a href="/lottunnels/Binaries/cloudflared/#download">Download</a></div></div>
 </td>
@@ -103,8 +127,57 @@ The inspiration of this project and site template is taken directly from <a href
             </tr>
             
             <tr>
+                <td><a href="/lottunnels/Binaries/dnscat2/" class="bin-name">dnscat2</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/dnscat2/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
                 <td><a href="/lottunnels/Binaries/exposesh/" class="bin-name">Expose.sh</a></td>
                 <td><div class="function-list"><div><a href="/lottunnels/Binaries/exposesh/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/frp/" class="bin-name">frp</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/frp/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/gost/" class="bin-name">GOST</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/gost/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/gsocket/" class="bin-name">Gsocket</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/gsocket/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/interactsh/" class="bin-name">interactsh</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/interactsh/#exfiltrate">Exfiltration</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/iodine/" class="bin-name">iodine</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/iodine/#access">Access</a></div><div><a href="/lottunnels/Binaries/iodine/#exfiltrate">Exfiltration</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/iroh/" class="bin-name">iroh</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/iroh/#exfiltrate">Exfiltration</a></div><div><a href="/lottunnels/Binaries/iroh/#download">Download</a></div><div><a href="/lottunnels/Binaries/iroh/#install">Install</a></div></div>
 </td>
                 <td>Binaries</td>
             </tr>
@@ -119,6 +192,13 @@ The inspiration of this project and site template is taken directly from <a href
             <tr>
                 <td><a href="/lottunnels/Binaries/jprq/" class="bin-name">JPRQ</a></td>
                 <td><div class="function-list"><div><a href="/lottunnels/Binaries/jprq/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/ligolo-ng/" class="bin-name">Ligolo-ng</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/ligolo-ng/#access">Access</a></div></div>
 </td>
                 <td>Binaries</td>
             </tr>
@@ -166,6 +246,20 @@ The inspiration of this project and site template is taken directly from <a href
             </tr>
             
             <tr>
+                <td><a href="/lottunnels/Binaries/neo-regeorg/" class="bin-name">Neo-reGeorg</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/neo-regeorg/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/netbird/" class="bin-name">NetBird</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/netbird/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
                 <td><a href="/lottunnels/Binaries/ngrok/" class="bin-name">ngrok</a></td>
                 <td><div class="function-list"><div><a href="/lottunnels/Binaries/ngrok/#install">Install</a></div><div><a href="/lottunnels/Binaries/ngrok/#access">Access</a></div></div>
 </td>
@@ -175,6 +269,20 @@ The inspiration of this project and site template is taken directly from <a href
             <tr>
                 <td><a href="/lottunnels/Binaries/openport/" class="bin-name">OpenPort</a></td>
                 <td><div class="function-list"><div><a href="/lottunnels/Binaries/openport/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/opentunnel/" class="bin-name">OpenTunnel</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/opentunnel/#install">Install</a></div><div><a href="/lottunnels/Binaries/opentunnel/#access">Access</a></div><div><a href="/lottunnels/Binaries/opentunnel/#persistence">Persistence</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/packetriot/" class="bin-name">Packetriot</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/packetriot/#access">Access</a></div><div><a href="/lottunnels/Binaries/packetriot/#exfiltrate">Exfiltration</a></div></div>
 </td>
                 <td>Binaries</td>
             </tr>
@@ -201,6 +309,34 @@ The inspiration of this project and site template is taken directly from <a href
             </tr>
             
             <tr>
+                <td><a href="/lottunnels/Binaries/portmap/" class="bin-name">Portmap.io</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/portmap/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/pyjamas/" class="bin-name">Pyjam.as</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/pyjamas/#exfiltrate">Exfiltration</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/qsocket/" class="bin-name">Qsocket</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/qsocket/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/regeorg/" class="bin-name">reGeorg</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/regeorg/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
                 <td><a href="/lottunnels/Binaries/serveo/" class="bin-name">Serveo</a></td>
                 <td><div class="function-list"><div><a href="/lottunnels/Binaries/serveo/#exfiltrate">Exfiltration</a></div><div><a href="/lottunnels/Binaries/serveo/#download">Download</a></div><div><a href="/lottunnels/Binaries/serveo/#phishing">Phishing</a></div><div><a href="/lottunnels/Binaries/serveo/#shell-access">Shell Access</a></div></div>
 </td>
@@ -222,8 +358,43 @@ The inspiration of this project and site template is taken directly from <a href
             </tr>
             
             <tr>
+                <td><a href="/lottunnels/Binaries/shootback/" class="bin-name">Shootback</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/shootback/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/sshj/" class="bin-name">SSH-J</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/sshj/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
                 <td><a href="/lottunnels/Binaries/staqlab/" class="bin-name">StaqLab</a></td>
                 <td><div class="function-list"><div><a href="/lottunnels/Binaries/staqlab/#access">Access</a></div><div><a href="/lottunnels/Binaries/staqlab/#exfiltrate">Exfiltration</a></div><div><a href="/lottunnels/Binaries/staqlab/#phishing">Phishing</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/suo5/" class="bin-name">suo5</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/suo5/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/tailcat/" class="bin-name">Tailcat</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/tailcat/#install">Install</a></div><div><a href="/lottunnels/Binaries/tailcat/#access">Access</a></div><div><a href="/lottunnels/Binaries/tailcat/#shell-access">Shell Access</a></div><div><a href="/lottunnels/Binaries/tailcat/#exfiltrate">Exfiltration</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/tailscale/" class="bin-name">Tailscale</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/tailscale/#install">Install</a></div><div><a href="/lottunnels/Binaries/tailscale/#access">Access</a></div></div>
 </td>
                 <td>Binaries</td>
             </tr>
@@ -250,6 +421,13 @@ The inspiration of this project and site template is taken directly from <a href
             </tr>
             
             <tr>
+                <td><a href="/lottunnels/Binaries/twingate/" class="bin-name">Twingate</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/twingate/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
                 <td><a href="/lottunnels/Binaries/vscode-gui/" class="bin-name">VSCode GUI</a></td>
                 <td><div class="function-list"><div><a href="/lottunnels/Binaries/vscode-gui/#access">Access</a></div><div><a href="/lottunnels/Binaries/vscode-gui/#exfiltrate">Exfiltration</a></div><div><a href="/lottunnels/Binaries/vscode-gui/#download">Download</a></div></div>
 </td>
@@ -259,6 +437,20 @@ The inspiration of this project and site template is taken directly from <a href
             <tr>
                 <td><a href="/lottunnels/Binaries/vscode-server/" class="bin-name">VSCode CLI</a></td>
                 <td><div class="function-list"><div><a href="/lottunnels/Binaries/vscode-server/#exfiltrate">Exfiltration</a></div><div><a href="/lottunnels/Binaries/vscode-server/#access">Access</a></div><div><a href="/lottunnels/Binaries/vscode-server/#shell-access">Shell Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/wstunnel/" class="bin-name">wstunnel</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/wstunnel/#access">Access</a></div></div>
+</td>
+                <td>Binaries</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/lottunnels/Binaries/zerotier/" class="bin-name">ZeroTier</a></td>
+                <td><div class="function-list"><div><a href="/lottunnels/Binaries/zerotier/#access">Access</a></div></div>
 </td>
                 <td>Binaries</td>
             </tr>
@@ -273,7 +465,9 @@ The inspiration of this project and site template is taken directly from <a href
 <script>
  function filter(query) {
      // consistently update the URL
-     location.hash = query;
+     if (query || !document.getElementById(location.hash.slice(1))) {
+         location.hash = query;
+     }
 
      // determine the query type
      var queryType = query[0];
@@ -334,6 +528,9 @@ The inspiration of this project and site template is taken directly from <a href
 
      // filter on load according to the URL
      var query = decodeURIComponent(location.hash.slice(1));
+     if (document.getElementById(query)) {
+         query = '';
+     }
      filter(query);
      if (query) {
          searchBox.value = query;
@@ -342,6 +539,7 @@ The inspiration of this project and site template is taken directly from <a href
  })();
 </script>
 
+</section>
 
     <script>
         // add permalink on headings

