@@ -1,12 +1,12 @@
-<input id="bin-search" type="text" placeholder="Search among the Binary Names, Functions & Types"/>
+<input id="bin-search" type="search" aria-label="Search binaries by name, function, or type" placeholder="Search binaries by name, function, or type">
 
-<div id="bin-table-wrapper">
+<div id="bin-table-wrapper" role="region" tabindex="0" aria-label="Binary catalog table; scroll horizontally on small screens">
     <table id="bin-table">
         <thead>
             <tr>
-                <th style="width: 45%">Binary</th>
-                <th style="width: 20%">Functions</th>
-                <th style="width: 20%">Type</th>
+                <th scope="col" style="width: 45%">Binary</th>
+                <th scope="col" style="width: 35%">Functions</th>
+                <th scope="col" style="width: 20%">Type</th>
             </tr>
         </thead>
         <tbody>
@@ -27,7 +27,9 @@
 <script>
  function filter(query) {
      // consistently update the URL
-     location.hash = query;
+     if (query || !document.getElementById(location.hash.slice(1))) {
+         location.hash = query;
+     }
 
      // determine the query type
      var queryType = query[0];
@@ -88,6 +90,9 @@
 
      // filter on load according to the URL
      var query = decodeURIComponent(location.hash.slice(1));
+     if (document.getElementById(query)) {
+         query = '';
+     }
      filter(query);
      if (query) {
          searchBox.value = query;

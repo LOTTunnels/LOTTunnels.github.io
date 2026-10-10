@@ -11,21 +11,27 @@ title: LOTTunnels
   gtag('config', 'UA-133649096-1');
 </script>
 
-<div class="header-box">
-<a href="https://github.com/LOTTunnels/LOTTunnels.github.io/blob/master/README.md"><img src="{{ '/assets/logo.png' | relative_url }}" height="150" alt="{{site.title}} Logo" style="margin-right: 10px;"></a>
-<div>
-<h2 style="margin-top: 0">Living Off The Tunnels</h2>
-Living Off The Tunnels a.k.a LOTTunnels Project is community driven project to document digital tunnels that can be abused by threat actors as well by insiders for data exfiltrations, persistence, shell access etc. 
-
-<br><br>Special thanks to all the <a href="https://lottunnels.github.io/contributors/">contributors</a> as this would not be possible without community support.
-<br><br>
-The inspiration of this project and site template is taken directly from <a href="https://lolbas-project.github.io/">LOLBAS</a> project.
-<br>
-
-<br>For a CSV of all of the domains recorded, please click <a href='https://lottunnels.github.io/domains.csv'>here</a>
-<br>For a CSV of all of the binaries recorded, please click <a href='https://lottunnels.github.io/binaries.csv'>here</a>
+<div class="home-hero">
+  <a href="https://github.com/LOTTunnels/LOTTunnels.github.io/blob/master/README.md">
+    <img src="{{ '/assets/logo.png' | relative_url }}" alt="{{site.title}} Logo">
+  </a>
+  <div>
+    <h2>Living Off The Tunnels</h2>
+    <p>LOTTunnels is a community-driven project documenting digital tunneling tools and how they can be abused for data exfiltration, persistence, and shell access.</p>
+    <nav class="home-actions" aria-label="Explore LOTTunnels">
+      <a href="#binary-directory">Browse the catalog</a>
+      <a href="{{ '/contributors/' | relative_url }}">Meet the contributors</a>
+      <a href="https://lottunnels.github.io/domains.csv">Domains CSV</a>
+      <a href="https://lottunnels.github.io/binaries.csv">Binaries CSV</a>
+    </nav>
+  </div>
 </div>
-</div>
+
+<p class="home-note">Inspired by the <a href="https://lolbas-project.github.io/">LOLBAS project</a>. Thank you to everyone who contributes to the community.</p>
 
 [functions]: /functions/
+<section id="binary-directory" aria-label="Binary catalog">
+<h2>Explore the catalog</h2>
+<p>Search binaries by name, function, or type.</p>
 {% include bin_table.html %}
+</section>

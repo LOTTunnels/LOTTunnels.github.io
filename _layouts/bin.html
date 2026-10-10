@@ -16,9 +16,9 @@ layout: common
 	</script>
 
 	<script src="{{ '/assets/url_helper.js' | relative_url }}"></script>
-	<section>
+	<section class="detail-section paths-section">
 		<h3>Paths:</h3>
-		<ul style="list-style-type:none">
+		<ul class="path-list" style="list-style-type:none">
 		{%- for ent in page.Full_Path %}
 			<li data-file-path>{{ent.Path | escape }}</li>
 		{%- endfor %}
@@ -27,7 +27,7 @@ layout: common
 	{%- assign resources = page.Resources | where_exp:"resource","resource.Link" %}
 
 	{%- if resources and resources.size > 0 %}
-	<section>
+	<section class="detail-section resources-section">
 		<h3>Resources:</h3>
 		<ul>
 			{%- for ent in page.Resources %}
@@ -38,7 +38,7 @@ layout: common
 	{%- endif %}
 	{% assign acknowledgements = page.Acknowledgement %}
 	{%- if acknowledgements and acknowledgements.size > 0 %}
-	<section>
+	<section class="detail-section acknowledgements-section">
 		<h3>Acknowledgements:</h3>
 		<ul>
 			{%- for pers in page.Acknowledgement %}
@@ -49,7 +49,7 @@ layout: common
 	{%- endif %}
 	{% assign detections = page.Detection %}
 	{%- if detections and detections.size > 0 %}
-	<section>
+	<section class="detail-section detections-section">
 		<h3>Detections:</h3>
 		<ul>
 			{%- for detection in detections %}{% for entity in detection %}
@@ -64,7 +64,7 @@ layout: common
 	</section>
 	{%- endif %}
 
-	<section>
+	<section class="command-sections">
 		{%- assign test = page.Commands | group_by:"Category" %}
 		{%- for Command in test -%}
 			{%- assign function_name = Command.name | downcase%}
