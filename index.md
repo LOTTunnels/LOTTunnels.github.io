@@ -33,6 +33,11 @@ title: LOTTunnels
   <span class="usage-label">Featured in</span>
   <a class="usage-link" href="https://github.com/jeffreytigch/PreventKit" target="_blank" rel="noopener noreferrer">PreventKit ↗</a>
   <a class="usage-link" href="https://lnkd.in/p/dc8_H4Gy" target="_blank" rel="noopener noreferrer">MagicSword ↗</a>
+  <a class="usage-link" href="https://x.com/hackinarticles/status/2097932225581142296" target="_blank" rel="noopener noreferrer">HackingArticles ↗</a>
+  <a class="usage-link" href="https://netwerklabs.com/living-off-the-land-lotl-resources/" target="_blank" rel="noopener noreferrer">NetwerkLabs ↗</a>
+  <a class="usage-link" href="https://tldrsec.com/p/tldr-sec-266" target="_blank" rel="noopener noreferrer">tl;dr sec ↗</a>
+  <a class="usage-link" href="https://x.com/kaspersky/status/1889566924847096288" target="_blank" rel="noopener noreferrer">KasperSky ↗</a>
+  <a class="usage-link" href="https://lolol.farm/" target="_blank" rel="noopener noreferrer">lolol.farm ↗</a>
 </section>
 
 [functions]: /functions/
