@@ -28,7 +28,7 @@ Commands:
 Full_Path:
   - Path: Execution of pitunnel/bash command from anywhere on the system.
 Detection:
-  - Domain: '*pitunnel.com'
+  - Domain: '*.pitunnel.com'
   - Command: Execution of the command.
 Resources:
   - Link: https://www.pitunnel.com/

@@ -15,6 +15,7 @@ Full_Path:
   - Path: Execution via command line using native tools
 Detection:
   - Domain: '*tunnel.pyjam.as*'
+  - Domain: '*.tunnel.pyjam.as'
 Resources:
   - Link: https://gitlab.com/pyjam.as/tunnel
 Acknowledgement:

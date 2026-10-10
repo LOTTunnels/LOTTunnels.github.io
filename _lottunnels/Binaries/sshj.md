@@ -21,6 +21,7 @@ Full_Path:
   - Path: Client side uses the standard OpenSSH ssh client; server side uses the dropbear-sshj fork of Dropbear.
 Detection:
   - Domain: 'ssh-j.com'
+  - Domain: '*.ssh-j.com'
   - Domain: 'sshjmpnoutfqotbj6r3acexiwoalgkth55y5kys7js3px2qqqrwuhqqd.onion'
   - Command: Execution of the ssh client with "-R" remote forward and/or "-J" jump host arguments targeting ssh-j.com.
 Resources:
