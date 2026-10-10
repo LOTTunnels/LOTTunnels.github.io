@@ -581,6 +581,62 @@ pre {
     background: $lighter;
 }
 
+.usage-section {
+    margin: 2rem 0;
+}
+
+.usage-section h2 {
+    margin-bottom: 0.35rem;
+}
+
+.usage-section > p {
+    margin-top: 0;
+    color: #58717a;
+}
+
+.usage-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.usage-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 0;
+    padding: 1rem 1.1rem;
+    border: 1px solid #e1eaee;
+    border-radius: 12px;
+    background: #fbfdfe;
+    text-decoration: none;
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.usage-card:hover {
+    transform: translateY(-2px);
+    border-color: #b8dadd;
+    box-shadow: 0 8px 20px rgba(19, 54, 67, 0.08);
+}
+
+.usage-card strong {
+    color: #153640;
+    font-size: 1.1rem;
+}
+
+.usage-card > span:last-child {
+    color: #58717a;
+    font-size: 0.9rem;
+}
+
+.usage-source {
+    color: $accent;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
 #bin-search {
     min-height: 48px;
     margin: 0 0 1rem;
@@ -754,6 +810,10 @@ pre {
     .home-hero {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .usage-cards {
+        grid-template-columns: 1fr;
     }
 
     #bin-table {

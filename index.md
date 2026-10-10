@@ -29,6 +29,23 @@ title: LOTTunnels
 
 <p class="home-note">Inspired by the <a href="https://lolbas-project.github.io/">LOLBAS project</a>. Thank you to everyone who contributes to the community.</p>
 
+<section class="usage-section" aria-labelledby="usage-heading">
+  <h2 id="usage-heading">Projects using LOTTunnels</h2>
+  <p>Examples of projects and community posts featuring LOTTunnels.</p>
+  <div class="usage-cards">
+    <a class="usage-card" href="https://github.com/jeffreytigch/PreventKit" target="_blank" rel="noopener noreferrer">
+      <span class="usage-source">GitHub project</span>
+      <strong>PreventKit</strong>
+      <span>Explore the project on GitHub</span>
+    </a>
+    <a class="usage-card" href="https://lnkd.in/p/dc8_H4Gy" target="_blank" rel="noopener noreferrer">
+      <span class="usage-source">Community post</span>
+      <strong>LOTTunnels on LinkedIn</strong>
+      <span>View the LinkedIn post</span>
+    </a>
+  </div>
+</section>
+
 [functions]: /functions/
 <section id="binary-directory" aria-label="Binary catalog">
 <h2>Explore the catalog</h2>
