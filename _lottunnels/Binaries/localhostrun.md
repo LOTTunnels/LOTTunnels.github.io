@@ -1,7 +1,7 @@
 ---
 Name: localhost.run
 Description: localhost.run is a client-less tool to instantly make a locally running application available on an internet accessible URL.
-Author: Kirill Magaskin
+Author: Kirill Magaskin, Kamran Saifullah
 Created: 2025-02-15
 Commands:
   - Command: ssh -R 80:127.0.0.1:<PORT> localhost.run
@@ -20,6 +20,4 @@ Resources:
 Acknowledgement:
   - Person: Kirill Magaskin
     Handle: '@k1rpi7ch'
-  - Person: Kamran Saifullah
-    Handle: '@deFr0ggy"
 ---
