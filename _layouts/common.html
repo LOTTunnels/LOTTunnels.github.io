@@ -6,6 +6,19 @@
         {%- assign title = "" | split:"" -%}
         {%- if page.url != '/' -%}
             {%- if page.layout == 'bin' -%}
+                {%- assign page.title = page.title | downcase -%}
+            {%- endif -%}
+            {%- assign title = title | push: page.title -%}
+        {%- endif -%}
+
+        {%- assign title = title | push: site.title -%}
+        {{- title | join: " | " -}}
+    </title>
+    <link rel="icon" href="{{ '/assets/favicon.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    {%- if page.layout == 'bin' -%}
     {%- assign og_title = page.title | append: " on " | append: site.title -%}
     {%- assign og_desc = page.Name | append: " is a living-off-the-tunnels file containing unexpected functionality that can be abused by attackers; this page lists all its use cases." -%}
     {%- else -%}
