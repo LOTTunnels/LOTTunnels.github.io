@@ -1,3 +1,24 @@
+<div class="bin-stats" aria-live="polite">
+    <span id="bin-count">Showing <strong id="bin-shown">{{ site.lottunnels.size }}</strong> of <strong>{{ site.lottunnels.size }}</strong> entries</span>
+</div>
+
+<div class="cat-chips" role="group" aria-label="Filter by category">
+    {%- for fn in site.data.functions -%}
+    {%- assign total = 0 -%}
+    {%- for file in site.lottunnels -%}
+    {%- assign hit = false -%}
+    {%- for cmd in file.Commands -%}
+    {%- assign c = cmd.Category | downcase -%}
+    {%- if c == fn[0] -%}{%- assign hit = true -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if hit -%}{%- assign total = total | plus: 1 -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if total > 0 -%}
+    <button type="button" class="cat-chip" data-query="#{{ fn[1].label | downcase }}">{{ fn[1].label }} <span class="cat-count">{{ total }}</span></button>
+    {%- endif -%}
+    {%- endfor -%}
+</div>
+
 <input id="bin-search" type="search" aria-label="Search binaries by name, function, or type" placeholder="Search binaries by name, function, or type">
 
 <div id="bin-table-wrapper" role="region" tabindex="0" aria-label="Binary catalog table; scroll horizontally on small screens">
@@ -39,6 +60,7 @@
 
      // filter rows
      var noResults = true;
+     var shown = 0;
      document.querySelectorAll('#bin-table tbody tr').forEach(function (row) {
          var binName = row.children[0].firstElementChild.innerText.toLowerCase();
          var functions = Array.from(row.children[1].firstElementChild.children)
@@ -46,13 +68,22 @@
                               .join('\n').toLowerCase();
          var types = row.children[2].textContent.toLowerCase();
 
-         // Check if the query matches any of the fields
-         if (binName.includes(query) || functions.includes(query) || types.includes(query)) {
+         // '#' queries (category chips) match a function label exactly
+         var matches = queryType === '#'
+             ? functions.split('\n').some(function (f) { return f.split(' (')[0] === query; })
+             : binName.includes(query) || functions.includes(query) || types.includes(query);
+         if (matches) {
              row.style.display = '';
              noResults = false;
+             shown++;
          } else {
              row.style.display = 'none';
          }
+     });
+
+     document.getElementById('bin-shown').textContent = shown;
+     document.querySelectorAll('.cat-chip').forEach(function (chip) {
+         chip.classList.toggle('active', chip.dataset.query === queryType + query && queryType === '#');
      });
 
      // update the search message visibility
@@ -71,6 +102,15 @@
      searchBox.addEventListener('input', function () {
          var query = searchBox.value.toLowerCase().trim();
          filter(query);
+     });
+
+     // category chips toggle an exact category filter
+     document.querySelectorAll('.cat-chip').forEach(function (chip) {
+         chip.addEventListener('click', function () {
+             var q = chip.classList.contains('active') ? '' : chip.dataset.query;
+             searchBox.value = q;
+             filter(q);
+         });
      });
 
      // handle shortcuts

@@ -827,3 +827,52 @@ pre {
         transition-duration: 0.01ms !important;
     }
 }
+
+// entry counts and category chips
+.bin-stats {
+    margin: 0 0 0.6rem;
+    color: #a99aa5;
+    font-size: 0.95rem;
+}
+
+.bin-stats strong {
+    color: #f0e7ec;
+}
+
+.cat-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0 0 1rem;
+}
+
+.cat-chip {
+    padding: 0.35rem 0.75rem;
+    border: 1px solid #40303b;
+    border-radius: 999px;
+    background: #100e14;
+    color: #e9e0e5;
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.cat-chip:hover {
+    border-color: #874052;
+    background: #24141d;
+}
+
+.cat-chip.active {
+    border-color: $hover;
+    background: rgba($accent, 0.3);
+    color: #fff;
+}
+
+.cat-count {
+    margin-left: 0.25rem;
+    padding: 0 0.4rem;
+    border-radius: 999px;
+    background: $accent;
+    color: #fff;
+    font-size: 0.8rem;
+}
