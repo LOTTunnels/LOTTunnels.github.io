@@ -13,10 +13,13 @@ Commands:
 
 Detection:
   - Domain: '*.localhost.run'
+  - Domain: '*.lhr.life'
   - Command: Execution of ssh with "localhost.run" argument.
 Resources:
   - Link: https://localhost.run/docs
 Acknowledgement:
   - Person: Kirill Magaskin
     Handle: '@k1rpi7ch'
+  - Person: Kamran Saifullah
+    Handle: '@deFr0ggy"
 ---
