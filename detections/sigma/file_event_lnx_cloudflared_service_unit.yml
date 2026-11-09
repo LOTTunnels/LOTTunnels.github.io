@@ -1,0 +1,17 @@
+title: Cloudflared systemd Unit Created
+id: c83e7fcd-62cb-4d7e-a28b-f8bf35234abe
+status: experimental
+description: Persistence via cloudflared service on Linux.
+author: LOTTunnels contributors
+date: 2026-11-09
+tags:
+  - attack.persistence
+  - attack.t1543.002
+logsource:
+  product: linux
+  category: file_event
+detection:
+  selection:
+    TargetFilename|endswith: '/cloudflared.service'
+  condition: selection
+level: medium

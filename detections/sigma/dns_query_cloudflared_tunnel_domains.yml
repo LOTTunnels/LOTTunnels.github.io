@@ -1,0 +1,20 @@
+title: DNS Query to Cloudflare Tunnel Infrastructure
+id: d0ef203f-b62c-4b9f-9c1f-857313c1ba00
+status: experimental
+description: Quick-tunnel creation and edge discovery used by cloudflared.
+author: LOTTunnels contributors
+date: 2026-11-09
+tags:
+  - attack.command-and-control
+  - attack.t1572
+logsource:
+  category: dns_query
+detection:
+  selection:
+    QueryName|endswith:
+      - '.trycloudflare.com'
+      - '.argotunnel.com'
+  condition: selection
+falsepositives:
+  - Sanctioned Cloudflare tunnels; scope by host group.
+level: medium

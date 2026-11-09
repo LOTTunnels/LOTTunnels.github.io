@@ -1,0 +1,19 @@
+title: Cloudflared Service Installed
+id: 9d0f52fd-5f92-44cf-b27b-e604ba1dc7f4
+status: experimental
+description: Windows service install event for cloudflared (display name to be verified in a lab).
+author: LOTTunnels contributors
+date: 2026-11-09
+tags:
+  - attack.persistence
+  - attack.t1543.003
+logsource:
+  product: windows
+  service: system
+detection:
+  selection:
+    Provider_Name: 'Service Control Manager'
+    EventID: 7045
+    ImagePath|contains: 'cloudflared'
+  condition: selection
+level: medium

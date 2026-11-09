@@ -1,0 +1,39 @@
+title: Cloudflared Tunnel Execution (Command Line, Windows/Linux/macOS)
+id: 1205eadc-e98a-446d-be98-9bb6309e2288
+status: experimental
+description: Detects cloudflared tunnel usage by command line, independent of file name (the binary is often renamed).
+references:
+  - https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/
+author: LOTTunnels contributors
+date: 2026-11-09
+tags:
+  - attack.command-and-control
+  - attack.t1572
+  - attack.t1090
+logsource:
+  category: process_creation
+detection:
+  selection_quick:
+    CommandLine|contains|all:
+      - 'tunnel'
+      - '--url'
+  selection_token:
+    CommandLine|contains|all:
+      - 'tunnel'
+      - 'run'
+      - '--token'
+  selection_hello:
+    CommandLine|contains|all:
+      - 'tunnel'
+      - '--hello-world'
+  selection_service:
+    CommandLine|contains: 'service install'
+  selection_name:
+    - Image|endswith:
+        - '/cloudflared'
+        - '\cloudflared.exe'
+    - CommandLine|contains: 'cloudflared'
+  condition: (selection_quick or selection_token or selection_hello) or (selection_service and selection_name)
+falsepositives:
+  - Legitimate Cloudflare Zero Trust deployments (allowlist by parent, signer and tunnel ID).
+level: medium
