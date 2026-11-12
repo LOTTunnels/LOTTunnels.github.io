@@ -1,6 +1,6 @@
 ---
 Name: Rathole
-Description: Rathole is a reverse proxy for NAT traversal, written in Rust, functionally similar to frp. A server on a public operator-controlled host and a client on the target network are each configured with a TOML file describing the services to expose; the client dials out to the server, so no inbound access to the target network is required.
+Description: Rathole is a reverse proxy for NAT traversal, written in Rust, functionally similar to frp. A server on a public operator-controlled host and a client on the target network are each configured with a TOML file describing the services to expose; the client dials out to the server, so no inbound access to the target network is required. It supports TLS and Noise transports.
 Author: elhoim
 Created: 2026-11-09
 Commands:

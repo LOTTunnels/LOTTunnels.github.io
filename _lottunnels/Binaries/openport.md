@@ -12,7 +12,7 @@ Commands:
     OperatingSystem: Windows, Linux
 
 Full_Path:
-  - Path: Quick Start/Installed version of jprq, which gets executed anywhere on the system.
+  - Path: Quick Start/Installed version of openport, which gets executed anywhere on the system.
 Detection:
   - Domain: 'openport.io'
   - Command: Execution of the binary and/or with arguments.

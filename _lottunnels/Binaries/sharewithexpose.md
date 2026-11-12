@@ -34,28 +34,28 @@ Commands:
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-  - Command: expose share http://https://localhost:<LOCAL PORT>
+  - Command: expose share http://localhost:<LOCAL PORT>
     Description: Exposing the local server/services over the internet to be accessible over expose domains.
     Usecase: Exposing the services running on localhost over the internet via expose tunnel domains. 
     Category: exfiltrate
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-  - Command: expose share http://https://localhost:<LOCAL PORT>
+  - Command: expose share http://localhost:<LOCAL PORT>
     Description: This can be used by threat actors to host malicious softwares/binaries on their local system and have it exposed via expose tunnels to be downloaded on the compromised system.
     Usecase: Threat actors hosting malicious binaries and using the links to download them onto the compromised system. 
     Category: download
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-  - Command: expose share http://https://localhost:<LOCAL PORT>
+  - Command: expose share http://localhost:<LOCAL PORT>
     Description: This can be used by threat actors to host phishing sites locally and expose them via expose tunnels to compromise users.
     Usecase: Hosting phishing sites locally and exposing them over expose tunnels to compromise users.
     Category: phishing
     Privileges: User
     OperatingSystem: Windows, Mac, Linux
 
-  - Command: expose share http://https://localhost:<LOCAL PORT> --server=<server>
+  - Command: expose share http://localhost:<LOCAL PORT> --server=<server>
     Description: This can be used by threat actors to connect to the nearest expose server.
     Usecase: Connecting to the nearest expose server in specific regions.
     Category: access
